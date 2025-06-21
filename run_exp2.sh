@@ -5,7 +5,7 @@ GPU_id=0
 arch=vgg11_bn_sgm ##if sgm, pls change this term vgg11_bn_sgm
 batch_size=128
 random_seed=125
-cutlayer_list="2"
+cutlayer_list="4"
 num_client=1
 
 AT_regularization=SCA_new #"gan_adv_step1;dropout0.2;gan_adv_step1_pruning180 nopeek"
