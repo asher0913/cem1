@@ -1,0 +1,1482 @@
+2024-10-20 23:31:12,266 DEBUG Split Learning Scheme: Overall Cutting_layer 4/13
+2024-10-20 23:31:15,290 DEBUG Namespace(arch='vgg11_bn_sgm', cutlayer=4, batch_size=128, filename='pretrain_False_lambd_8_noise_0.025_epoch_240_bottleneck_noRELU_C8S1_log_1_ATstrength_0.3_lr_0.05_varthres_0.125', folder='new_saves/cifar10/nopeek_infocons_sgm_lg1_thre0.125', num_client=1, num_epochs=240, learning_rate=0.05, lambd=8.0, dataset_portion=1.0, client_sample_ratio=1.0, noniid=1.0, local_lr=-1.0, dataset='cifar10', scheme='V2_epoch', regularization='Gaussian_kl', regularization_strength=0.025, var_threshold=0.125, AT_regularization='nopeek', AT_regularization_strength=0.3, log_entropy=1.0, ssim_threshold=0.5, gan_AE_type='res_normN4C64', gan_loss_type='SSIM', bottleneck_option='noRELU_C8S1', optimize_computation=1, decoder_sync=False, load_from_checkpoint=False, load_from_checkpoint_server=False, transfer_source_task='cifar100', finetune_freeze_bn=False, save_more_checkpoints=False, initialize_different=False, random_seed=125)
+2024-10-20 23:31:15,360 DEBUG Model's smashed-data size is torch.Size([1, 8, 8, 8])
+2024-10-20 23:31:15,495 DEBUG Real Train Phase: done by all clients, for total 240 epochs
+2024-10-20 23:31:15,496 DEBUG GAN training interval N (once every N step) is set to 1!
+2024-10-20 23:31:15,496 DEBUG Train in V2_epoch style
+2024-10-20 23:31:15,848 DEBUG log--[1/240][0/391][client-0] train loss: 0.0000 cross-entropy loss: 2.2895
+2024-10-20 23:31:18,458 DEBUG log--[1/240][390/391][client-0] train loss: 0.0000 cross-entropy loss: 2.3340
+2024-10-20 23:31:18,676 DEBUG Epoch 0	Test (client-0):	Loss 2.3199 (2.3199)	Prec@1 7.031 (7.031)
+2024-10-20 23:31:18,784 DEBUG Epoch 50	Test (client-0):	Loss 2.3289 (2.3093)	Prec@1 4.688 (10.141)
+2024-10-20 23:31:18,890 DEBUG  * Prec@1 10.140
+2024-10-20 23:31:20,401 DEBUG the mean of mutal infor is:(-5.005), the est mean of mutal infor is:(-4.028)
+2024-10-20 23:31:23,085 DEBUG Train in V2_epoch style
+2024-10-20 23:31:23,147 DEBUG log--[2/240][0/391][client-0] train loss: 1.0050 cross-entropy loss: 2.3492
+2024-10-20 23:31:28,902 DEBUG log--[2/240][390/391][client-0] train loss: 0.7955 cross-entropy loss: 1.9421
+2024-10-20 23:31:29,141 DEBUG Epoch 0	Test (client-0):	Loss 1.8066 (1.8066)	Prec@1 35.156 (35.156)
+2024-10-20 23:31:29,253 DEBUG Epoch 50	Test (client-0):	Loss 1.8937 (1.8390)	Prec@1 21.094 (28.355)
+2024-10-20 23:31:29,352 DEBUG  * Prec@1 28.040
+2024-10-20 23:31:30,860 DEBUG Train in V2_epoch style
+2024-10-20 23:31:30,879 DEBUG log--[3/240][0/391][client-0] train loss: 1.2866 cross-entropy loss: 1.8222
+2024-10-20 23:31:36,902 DEBUG log--[3/240][390/391][client-0] train loss: 1.0293 cross-entropy loss: 1.7516
+2024-10-20 23:31:37,150 DEBUG Epoch 0	Test (client-0):	Loss 1.6657 (1.6657)	Prec@1 32.031 (32.031)
+2024-10-20 23:31:37,259 DEBUG Epoch 50	Test (client-0):	Loss 1.9214 (1.8086)	Prec@1 28.125 (31.036)
+2024-10-20 23:31:37,357 DEBUG  * Prec@1 30.970
+2024-10-20 23:31:38,891 DEBUG Train in V2_epoch style
+2024-10-20 23:31:38,910 DEBUG log--[4/240][0/391][client-0] train loss: 1.4654 cross-entropy loss: 1.6299
+2024-10-20 23:31:45,657 DEBUG log--[4/240][390/391][client-0] train loss: 1.4169 cross-entropy loss: 1.6010
+2024-10-20 23:31:45,904 DEBUG Epoch 0	Test (client-0):	Loss 1.7789 (1.7789)	Prec@1 31.250 (31.250)
+2024-10-20 23:31:46,013 DEBUG Epoch 50	Test (client-0):	Loss 1.9918 (1.9408)	Prec@1 31.250 (32.292)
+2024-10-20 23:31:46,117 DEBUG  * Prec@1 32.700
+2024-10-20 23:31:47,567 DEBUG Train in V2_epoch style
+2024-10-20 23:31:47,589 DEBUG log--[5/240][0/391][client-0] train loss: 1.4377 cross-entropy loss: 1.5103
+2024-10-20 23:31:54,140 DEBUG log--[5/240][390/391][client-0] train loss: 1.4483 cross-entropy loss: 1.4779
+2024-10-20 23:31:54,394 DEBUG Epoch 0	Test (client-0):	Loss 1.7251 (1.7251)	Prec@1 42.188 (42.188)
+2024-10-20 23:31:54,509 DEBUG Epoch 50	Test (client-0):	Loss 2.0971 (1.7702)	Prec@1 30.469 (42.065)
+2024-10-20 23:31:54,612 DEBUG  * Prec@1 42.100
+2024-10-20 23:31:56,113 DEBUG Train in V2_epoch style
+2024-10-20 23:31:56,135 DEBUG log--[6/240][0/391][client-0] train loss: 1.4554 cross-entropy loss: 1.6759
+2024-10-20 23:32:02,581 DEBUG log--[6/240][390/391][client-0] train loss: 1.3976 cross-entropy loss: 1.3547
+2024-10-20 23:32:02,831 DEBUG Epoch 0	Test (client-0):	Loss 1.4128 (1.4128)	Prec@1 42.969 (42.969)
+2024-10-20 23:32:02,943 DEBUG Epoch 50	Test (client-0):	Loss 1.4868 (1.3734)	Prec@1 50.000 (49.939)
+2024-10-20 23:32:03,047 DEBUG  * Prec@1 49.180
+2024-10-20 23:32:04,668 DEBUG Train in V2_epoch style
+2024-10-20 23:32:04,687 DEBUG log--[7/240][0/391][client-0] train loss: 1.5016 cross-entropy loss: 1.2263
+2024-10-20 23:32:11,292 DEBUG log--[7/240][390/391][client-0] train loss: 1.3679 cross-entropy loss: 1.2583
+2024-10-20 23:32:11,541 DEBUG Epoch 0	Test (client-0):	Loss 1.4331 (1.4331)	Prec@1 46.875 (46.875)
+2024-10-20 23:32:11,701 DEBUG Epoch 50	Test (client-0):	Loss 1.4971 (1.3451)	Prec@1 52.344 (54.733)
+2024-10-20 23:32:11,799 DEBUG  * Prec@1 54.230
+2024-10-20 23:32:13,500 DEBUG Train in V2_epoch style
+2024-10-20 23:32:13,520 DEBUG log--[8/240][0/391][client-0] train loss: 1.3282 cross-entropy loss: 1.1273
+2024-10-20 23:32:20,071 DEBUG log--[8/240][390/391][client-0] train loss: 1.2971 cross-entropy loss: 1.1842
+2024-10-20 23:32:20,321 DEBUG Epoch 0	Test (client-0):	Loss 1.3833 (1.3833)	Prec@1 48.438 (48.438)
+2024-10-20 23:32:20,429 DEBUG Epoch 50	Test (client-0):	Loss 1.2758 (1.4456)	Prec@1 58.594 (49.219)
+2024-10-20 23:32:20,531 DEBUG  * Prec@1 49.110
+2024-10-20 23:32:21,932 DEBUG Train in V2_epoch style
+2024-10-20 23:32:21,952 DEBUG log--[9/240][0/391][client-0] train loss: 1.3117 cross-entropy loss: 1.2880
+2024-10-20 23:32:28,606 DEBUG log--[9/240][390/391][client-0] train loss: 1.3214 cross-entropy loss: 1.1240
+2024-10-20 23:32:28,852 DEBUG Epoch 0	Test (client-0):	Loss 1.3304 (1.3304)	Prec@1 55.469 (55.469)
+2024-10-20 23:32:28,961 DEBUG Epoch 50	Test (client-0):	Loss 1.2628 (1.3098)	Prec@1 61.719 (57.782)
+2024-10-20 23:32:29,064 DEBUG  * Prec@1 57.260
+2024-10-20 23:32:30,511 DEBUG Train in V2_epoch style
+2024-10-20 23:32:30,532 DEBUG log--[10/240][0/391][client-0] train loss: 1.2255 cross-entropy loss: 1.2264
+2024-10-20 23:32:37,479 DEBUG log--[10/240][390/391][client-0] train loss: 1.3178 cross-entropy loss: 1.0631
+2024-10-20 23:32:37,733 DEBUG Epoch 0	Test (client-0):	Loss 1.0872 (1.0872)	Prec@1 59.375 (59.375)
+2024-10-20 23:32:37,844 DEBUG Epoch 50	Test (client-0):	Loss 1.0615 (1.0356)	Prec@1 65.625 (64.522)
+2024-10-20 23:32:37,945 DEBUG  * Prec@1 64.350
+2024-10-20 23:32:39,479 DEBUG Train in V2_epoch style
+2024-10-20 23:32:39,499 DEBUG log--[11/240][0/391][client-0] train loss: 1.2539 cross-entropy loss: 0.8684
+2024-10-20 23:32:46,004 DEBUG log--[11/240][390/391][client-0] train loss: 1.2895 cross-entropy loss: 1.0227
+2024-10-20 23:32:46,259 DEBUG Epoch 0	Test (client-0):	Loss 0.8780 (0.8780)	Prec@1 68.750 (68.750)
+2024-10-20 23:32:46,368 DEBUG Epoch 50	Test (client-0):	Loss 0.8849 (0.9738)	Prec@1 71.875 (67.463)
+2024-10-20 23:32:46,468 DEBUG  * Prec@1 67.520
+2024-10-20 23:32:47,871 DEBUG the mean of mutal infor is:(-5.049), the est mean of mutal infor is:(-3.710)
+2024-10-20 23:32:47,966 DEBUG Train in V2_epoch style
+2024-10-20 23:32:47,986 DEBUG log--[12/240][0/391][client-0] train loss: 1.3200 cross-entropy loss: 1.0246
+2024-10-20 23:32:54,682 DEBUG log--[12/240][390/391][client-0] train loss: 1.2991 cross-entropy loss: 0.9861
+2024-10-20 23:32:54,929 DEBUG Epoch 0	Test (client-0):	Loss 1.5344 (1.5344)	Prec@1 52.344 (52.344)
+2024-10-20 23:32:55,037 DEBUG Epoch 50	Test (client-0):	Loss 1.3988 (1.4529)	Prec@1 59.375 (55.453)
+2024-10-20 23:32:55,164 DEBUG  * Prec@1 55.470
+2024-10-20 23:32:56,536 DEBUG Train in V2_epoch style
+2024-10-20 23:32:56,556 DEBUG log--[13/240][0/391][client-0] train loss: 1.2975 cross-entropy loss: 0.9052
+2024-10-20 23:33:03,058 DEBUG log--[13/240][390/391][client-0] train loss: 1.2451 cross-entropy loss: 0.9441
+2024-10-20 23:33:03,308 DEBUG Epoch 0	Test (client-0):	Loss 1.4841 (1.4841)	Prec@1 54.688 (54.688)
+2024-10-20 23:33:03,419 DEBUG Epoch 50	Test (client-0):	Loss 1.8561 (1.4970)	Prec@1 40.625 (54.565)
+2024-10-20 23:33:03,524 DEBUG  * Prec@1 54.770
+2024-10-20 23:33:04,949 DEBUG Train in V2_epoch style
+2024-10-20 23:33:04,969 DEBUG log--[14/240][0/391][client-0] train loss: 1.4496 cross-entropy loss: 0.9830
+2024-10-20 23:33:11,693 DEBUG log--[14/240][390/391][client-0] train loss: 1.3894 cross-entropy loss: 0.9212
+2024-10-20 23:33:11,936 DEBUG Epoch 0	Test (client-0):	Loss 0.8116 (0.8116)	Prec@1 74.219 (74.219)
+2024-10-20 23:33:12,047 DEBUG Epoch 50	Test (client-0):	Loss 0.9078 (0.8716)	Prec@1 71.875 (71.155)
+2024-10-20 23:33:12,172 DEBUG  * Prec@1 70.920
+2024-10-20 23:33:13,616 DEBUG Train in V2_epoch style
+2024-10-20 23:33:13,637 DEBUG log--[15/240][0/391][client-0] train loss: 1.5165 cross-entropy loss: 0.8484
+2024-10-20 23:33:20,154 DEBUG log--[15/240][390/391][client-0] train loss: 1.4023 cross-entropy loss: 0.8907
+2024-10-20 23:33:20,401 DEBUG Epoch 0	Test (client-0):	Loss 0.8049 (0.8049)	Prec@1 72.656 (72.656)
+2024-10-20 23:33:20,513 DEBUG Epoch 50	Test (client-0):	Loss 0.8102 (0.8465)	Prec@1 74.219 (71.752)
+2024-10-20 23:33:20,631 DEBUG  * Prec@1 71.900
+2024-10-20 23:33:22,140 DEBUG Train in V2_epoch style
+2024-10-20 23:33:22,160 DEBUG log--[16/240][0/391][client-0] train loss: 1.5237 cross-entropy loss: 0.9240
+2024-10-20 23:33:28,898 DEBUG log--[16/240][390/391][client-0] train loss: 1.4517 cross-entropy loss: 0.8662
+2024-10-20 23:33:29,150 DEBUG Epoch 0	Test (client-0):	Loss 0.8840 (0.8840)	Prec@1 67.969 (67.969)
+2024-10-20 23:33:29,260 DEBUG Epoch 50	Test (client-0):	Loss 0.9012 (0.9109)	Prec@1 73.438 (70.175)
+2024-10-20 23:33:29,365 DEBUG  * Prec@1 70.350
+2024-10-20 23:33:30,804 DEBUG Train in V2_epoch style
+2024-10-20 23:33:30,823 DEBUG log--[17/240][0/391][client-0] train loss: 1.4711 cross-entropy loss: 0.8630
+2024-10-20 23:33:37,371 DEBUG log--[17/240][390/391][client-0] train loss: 1.4201 cross-entropy loss: 0.8428
+2024-10-20 23:33:37,621 DEBUG Epoch 0	Test (client-0):	Loss 0.8235 (0.8235)	Prec@1 67.188 (67.188)
+2024-10-20 23:33:37,733 DEBUG Epoch 50	Test (client-0):	Loss 0.9047 (0.8736)	Prec@1 73.438 (71.461)
+2024-10-20 23:33:37,837 DEBUG  * Prec@1 71.290
+2024-10-20 23:33:39,241 DEBUG Train in V2_epoch style
+2024-10-20 23:33:39,261 DEBUG log--[18/240][0/391][client-0] train loss: 1.4819 cross-entropy loss: 0.8598
+2024-10-20 23:33:45,858 DEBUG log--[18/240][390/391][client-0] train loss: 1.4633 cross-entropy loss: 0.8225
+2024-10-20 23:33:46,108 DEBUG Epoch 0	Test (client-0):	Loss 0.7800 (0.7800)	Prec@1 77.344 (77.344)
+2024-10-20 23:33:46,220 DEBUG Epoch 50	Test (client-0):	Loss 0.9438 (0.9274)	Prec@1 68.750 (70.190)
+2024-10-20 23:33:46,323 DEBUG  * Prec@1 70.540
+2024-10-20 23:33:47,727 DEBUG Train in V2_epoch style
+2024-10-20 23:33:47,748 DEBUG log--[19/240][0/391][client-0] train loss: 1.4565 cross-entropy loss: 0.7277
+2024-10-20 23:33:54,935 DEBUG log--[19/240][390/391][client-0] train loss: 1.4022 cross-entropy loss: 0.8082
+2024-10-20 23:33:55,197 DEBUG Epoch 0	Test (client-0):	Loss 0.9614 (0.9614)	Prec@1 72.656 (72.656)
+2024-10-20 23:33:55,309 DEBUG Epoch 50	Test (client-0):	Loss 0.8524 (0.8575)	Prec@1 73.438 (72.411)
+2024-10-20 23:33:55,434 DEBUG  * Prec@1 72.250
+2024-10-20 23:33:56,895 DEBUG Train in V2_epoch style
+2024-10-20 23:33:56,915 DEBUG log--[20/240][0/391][client-0] train loss: 1.3923 cross-entropy loss: 0.8519
+2024-10-20 23:34:03,586 DEBUG log--[20/240][390/391][client-0] train loss: 1.4004 cross-entropy loss: 0.7920
+2024-10-20 23:34:03,850 DEBUG Epoch 0	Test (client-0):	Loss 1.1064 (1.1064)	Prec@1 64.844 (64.844)
+2024-10-20 23:34:03,957 DEBUG Epoch 50	Test (client-0):	Loss 1.1324 (1.1650)	Prec@1 68.750 (65.824)
+2024-10-20 23:34:04,058 DEBUG  * Prec@1 66.340
+2024-10-20 23:34:05,505 DEBUG Train in V2_epoch style
+2024-10-20 23:34:05,526 DEBUG log--[21/240][0/391][client-0] train loss: 1.4304 cross-entropy loss: 0.7792
+2024-10-20 23:34:12,304 DEBUG log--[21/240][390/391][client-0] train loss: 1.4609 cross-entropy loss: 0.7715
+2024-10-20 23:34:12,570 DEBUG Epoch 0	Test (client-0):	Loss 0.9558 (0.9558)	Prec@1 71.875 (71.875)
+2024-10-20 23:34:12,680 DEBUG Epoch 50	Test (client-0):	Loss 0.9643 (0.9650)	Prec@1 68.750 (69.041)
+2024-10-20 23:34:12,786 DEBUG  * Prec@1 69.070
+2024-10-20 23:34:14,237 DEBUG the mean of mutal infor is:(-4.659), the est mean of mutal infor is:(-3.254)
+2024-10-20 23:34:14,348 DEBUG Train in V2_epoch style
+2024-10-20 23:34:14,370 DEBUG log--[22/240][0/391][client-0] train loss: 1.5208 cross-entropy loss: 0.7540
+2024-10-20 23:34:20,972 DEBUG log--[22/240][390/391][client-0] train loss: 1.4771 cross-entropy loss: 0.7700
+2024-10-20 23:34:21,239 DEBUG Epoch 0	Test (client-0):	Loss 0.7607 (0.7607)	Prec@1 75.000 (75.000)
+2024-10-20 23:34:21,360 DEBUG Epoch 50	Test (client-0):	Loss 1.0876 (0.8346)	Prec@1 71.875 (72.978)
+2024-10-20 23:34:21,484 DEBUG  * Prec@1 72.960
+2024-10-20 23:34:23,268 DEBUG Train in V2_epoch style
+2024-10-20 23:34:23,287 DEBUG log--[23/240][0/391][client-0] train loss: 1.4468 cross-entropy loss: 0.6947
+2024-10-20 23:34:30,092 DEBUG log--[23/240][390/391][client-0] train loss: 1.5402 cross-entropy loss: 0.7518
+2024-10-20 23:34:30,342 DEBUG Epoch 0	Test (client-0):	Loss 0.7849 (0.7849)	Prec@1 70.312 (70.312)
+2024-10-20 23:34:30,464 DEBUG Epoch 50	Test (client-0):	Loss 0.8792 (0.7744)	Prec@1 76.562 (73.683)
+2024-10-20 23:34:30,595 DEBUG  * Prec@1 73.720
+2024-10-20 23:34:32,047 DEBUG Train in V2_epoch style
+2024-10-20 23:34:32,067 DEBUG log--[24/240][0/391][client-0] train loss: 1.4953 cross-entropy loss: 0.7066
+2024-10-20 23:34:38,888 DEBUG log--[24/240][390/391][client-0] train loss: 1.5327 cross-entropy loss: 0.7446
+2024-10-20 23:34:39,157 DEBUG Epoch 0	Test (client-0):	Loss 0.6916 (0.6916)	Prec@1 78.125 (78.125)
+2024-10-20 23:34:39,269 DEBUG Epoch 50	Test (client-0):	Loss 1.0160 (0.8587)	Prec@1 67.188 (71.768)
+2024-10-20 23:34:39,375 DEBUG  * Prec@1 71.810
+2024-10-20 23:34:40,854 DEBUG Train in V2_epoch style
+2024-10-20 23:34:40,877 DEBUG log--[25/240][0/391][client-0] train loss: 1.5136 cross-entropy loss: 0.8524
+2024-10-20 23:34:47,513 DEBUG log--[25/240][390/391][client-0] train loss: 1.4520 cross-entropy loss: 0.7335
+2024-10-20 23:34:47,763 DEBUG Epoch 0	Test (client-0):	Loss 0.9276 (0.9276)	Prec@1 70.312 (70.312)
+2024-10-20 23:34:47,872 DEBUG Epoch 50	Test (client-0):	Loss 1.0849 (0.8937)	Prec@1 62.500 (71.278)
+2024-10-20 23:34:47,978 DEBUG  * Prec@1 71.550
+2024-10-20 23:34:49,398 DEBUG Train in V2_epoch style
+2024-10-20 23:34:49,419 DEBUG log--[26/240][0/391][client-0] train loss: 1.6263 cross-entropy loss: 0.7399
+2024-10-20 23:34:56,455 DEBUG log--[26/240][390/391][client-0] train loss: 1.5482 cross-entropy loss: 0.7157
+2024-10-20 23:34:56,710 DEBUG Epoch 0	Test (client-0):	Loss 0.7294 (0.7294)	Prec@1 71.875 (71.875)
+2024-10-20 23:34:56,823 DEBUG Epoch 50	Test (client-0):	Loss 0.8259 (0.7429)	Prec@1 73.438 (75.490)
+2024-10-20 23:34:56,930 DEBUG  * Prec@1 75.430
+2024-10-20 23:34:58,422 DEBUG Train in V2_epoch style
+2024-10-20 23:34:58,443 DEBUG log--[27/240][0/391][client-0] train loss: 1.5601 cross-entropy loss: 0.8440
+2024-10-20 23:35:05,192 DEBUG log--[27/240][390/391][client-0] train loss: 1.4682 cross-entropy loss: 0.7122
+2024-10-20 23:35:05,448 DEBUG Epoch 0	Test (client-0):	Loss 0.8394 (0.8394)	Prec@1 71.875 (71.875)
+2024-10-20 23:35:05,560 DEBUG Epoch 50	Test (client-0):	Loss 0.6648 (0.7040)	Prec@1 78.125 (76.654)
+2024-10-20 23:35:05,665 DEBUG  * Prec@1 76.700
+2024-10-20 23:35:07,118 DEBUG Train in V2_epoch style
+2024-10-20 23:35:07,138 DEBUG log--[28/240][0/391][client-0] train loss: 1.4680 cross-entropy loss: 0.6655
+2024-10-20 23:35:13,665 DEBUG log--[28/240][390/391][client-0] train loss: 1.5414 cross-entropy loss: 0.7013
+2024-10-20 23:35:13,938 DEBUG Epoch 0	Test (client-0):	Loss 0.6529 (0.6529)	Prec@1 78.906 (78.906)
+2024-10-20 23:35:14,045 DEBUG Epoch 50	Test (client-0):	Loss 0.7451 (0.6824)	Prec@1 77.344 (77.650)
+2024-10-20 23:35:14,151 DEBUG  * Prec@1 77.450
+2024-10-20 23:35:15,648 DEBUG Train in V2_epoch style
+2024-10-20 23:35:15,671 DEBUG log--[29/240][0/391][client-0] train loss: 1.5423 cross-entropy loss: 0.4998
+2024-10-20 23:35:22,454 DEBUG log--[29/240][390/391][client-0] train loss: 1.4952 cross-entropy loss: 0.6946
+2024-10-20 23:35:22,726 DEBUG Epoch 0	Test (client-0):	Loss 0.7276 (0.7276)	Prec@1 78.906 (78.906)
+2024-10-20 23:35:22,838 DEBUG Epoch 50	Test (client-0):	Loss 0.8446 (0.7309)	Prec@1 72.656 (75.980)
+2024-10-20 23:35:22,947 DEBUG  * Prec@1 75.620
+2024-10-20 23:35:24,398 DEBUG Train in V2_epoch style
+2024-10-20 23:35:24,420 DEBUG log--[30/240][0/391][client-0] train loss: 1.5920 cross-entropy loss: 0.5803
+2024-10-20 23:35:31,287 DEBUG log--[30/240][390/391][client-0] train loss: 1.5281 cross-entropy loss: 0.6858
+2024-10-20 23:35:31,557 DEBUG Epoch 0	Test (client-0):	Loss 0.8401 (0.8401)	Prec@1 71.875 (71.875)
+2024-10-20 23:35:31,674 DEBUG Epoch 50	Test (client-0):	Loss 0.8264 (0.8424)	Prec@1 78.125 (73.683)
+2024-10-20 23:35:31,781 DEBUG  * Prec@1 73.580
+2024-10-20 23:35:33,219 DEBUG Train in V2_epoch style
+2024-10-20 23:35:33,243 DEBUG log--[31/240][0/391][client-0] train loss: 1.5421 cross-entropy loss: 0.6702
+2024-10-20 23:35:40,010 DEBUG log--[31/240][390/391][client-0] train loss: 1.5468 cross-entropy loss: 0.6822
+2024-10-20 23:35:40,278 DEBUG Epoch 0	Test (client-0):	Loss 0.9128 (0.9128)	Prec@1 73.438 (73.438)
+2024-10-20 23:35:40,388 DEBUG Epoch 50	Test (client-0):	Loss 1.1256 (0.9482)	Prec@1 64.844 (70.772)
+2024-10-20 23:35:40,495 DEBUG  * Prec@1 70.440
+2024-10-20 23:35:41,827 DEBUG the mean of mutal infor is:(-4.510), the est mean of mutal infor is:(-3.156)
+2024-10-20 23:35:41,931 DEBUG Train in V2_epoch style
+2024-10-20 23:35:41,951 DEBUG log--[32/240][0/391][client-0] train loss: 1.4856 cross-entropy loss: 0.6709
+2024-10-20 23:35:48,507 DEBUG log--[32/240][390/391][client-0] train loss: 1.5612 cross-entropy loss: 0.6786
+2024-10-20 23:35:48,775 DEBUG Epoch 0	Test (client-0):	Loss 0.6947 (0.6947)	Prec@1 78.906 (78.906)
+2024-10-20 23:35:48,893 DEBUG Epoch 50	Test (client-0):	Loss 0.7374 (0.6522)	Prec@1 75.781 (78.937)
+2024-10-20 23:35:49,003 DEBUG  * Prec@1 78.930
+2024-10-20 23:35:50,539 DEBUG Train in V2_epoch style
+2024-10-20 23:35:50,560 DEBUG log--[33/240][0/391][client-0] train loss: 1.5144 cross-entropy loss: 0.6815
+2024-10-20 23:35:57,365 DEBUG log--[33/240][390/391][client-0] train loss: 1.5624 cross-entropy loss: 0.6770
+2024-10-20 23:35:57,635 DEBUG Epoch 0	Test (client-0):	Loss 0.7069 (0.7069)	Prec@1 75.000 (75.000)
+2024-10-20 23:35:57,750 DEBUG Epoch 50	Test (client-0):	Loss 0.7838 (0.7418)	Prec@1 75.000 (75.996)
+2024-10-20 23:35:57,871 DEBUG  * Prec@1 75.790
+2024-10-20 23:35:59,363 DEBUG Train in V2_epoch style
+2024-10-20 23:35:59,386 DEBUG log--[34/240][0/391][client-0] train loss: 1.6251 cross-entropy loss: 0.7277
+2024-10-20 23:36:05,833 DEBUG log--[34/240][390/391][client-0] train loss: 1.5457 cross-entropy loss: 0.6668
+2024-10-20 23:36:06,095 DEBUG Epoch 0	Test (client-0):	Loss 0.4460 (0.4460)	Prec@1 83.594 (83.594)
+2024-10-20 23:36:06,208 DEBUG Epoch 50	Test (client-0):	Loss 0.7410 (0.6756)	Prec@1 78.906 (78.048)
+2024-10-20 23:36:06,314 DEBUG  * Prec@1 77.660
+2024-10-20 23:36:07,763 DEBUG Train in V2_epoch style
+2024-10-20 23:36:07,782 DEBUG log--[35/240][0/391][client-0] train loss: 1.4925 cross-entropy loss: 0.6782
+2024-10-20 23:36:14,368 DEBUG log--[35/240][390/391][client-0] train loss: 1.4971 cross-entropy loss: 0.6584
+2024-10-20 23:36:14,640 DEBUG Epoch 0	Test (client-0):	Loss 0.6612 (0.6612)	Prec@1 77.344 (77.344)
+2024-10-20 23:36:14,753 DEBUG Epoch 50	Test (client-0):	Loss 0.8220 (0.6709)	Prec@1 76.562 (77.757)
+2024-10-20 23:36:14,859 DEBUG  * Prec@1 77.730
+2024-10-20 23:36:16,363 DEBUG Train in V2_epoch style
+2024-10-20 23:36:16,383 DEBUG log--[36/240][0/391][client-0] train loss: 1.5076 cross-entropy loss: 0.5984
+2024-10-20 23:36:22,923 DEBUG log--[36/240][390/391][client-0] train loss: 1.5313 cross-entropy loss: 0.6550
+2024-10-20 23:36:23,191 DEBUG Epoch 0	Test (client-0):	Loss 0.7091 (0.7091)	Prec@1 79.688 (79.688)
+2024-10-20 23:36:23,303 DEBUG Epoch 50	Test (client-0):	Loss 0.8605 (0.6889)	Prec@1 75.781 (77.834)
+2024-10-20 23:36:23,411 DEBUG  * Prec@1 77.610
+2024-10-20 23:36:24,882 DEBUG Train in V2_epoch style
+2024-10-20 23:36:24,901 DEBUG log--[37/240][0/391][client-0] train loss: 1.4823 cross-entropy loss: 0.7677
+2024-10-20 23:36:31,538 DEBUG log--[37/240][390/391][client-0] train loss: 1.5934 cross-entropy loss: 0.6498
+2024-10-20 23:36:31,793 DEBUG Epoch 0	Test (client-0):	Loss 0.7427 (0.7427)	Prec@1 78.125 (78.125)
+2024-10-20 23:36:31,903 DEBUG Epoch 50	Test (client-0):	Loss 0.7725 (0.7349)	Prec@1 71.875 (75.199)
+2024-10-20 23:36:32,009 DEBUG  * Prec@1 75.340
+2024-10-20 23:36:33,443 DEBUG Train in V2_epoch style
+2024-10-20 23:36:33,463 DEBUG log--[38/240][0/391][client-0] train loss: 1.5265 cross-entropy loss: 0.7849
+2024-10-20 23:36:40,095 DEBUG log--[38/240][390/391][client-0] train loss: 1.5570 cross-entropy loss: 0.6465
+2024-10-20 23:36:40,362 DEBUG Epoch 0	Test (client-0):	Loss 0.7399 (0.7399)	Prec@1 77.344 (77.344)
+2024-10-20 23:36:40,471 DEBUG Epoch 50	Test (client-0):	Loss 0.7413 (0.7016)	Prec@1 75.000 (76.164)
+2024-10-20 23:36:40,607 DEBUG  * Prec@1 76.560
+2024-10-20 23:36:42,082 DEBUG Train in V2_epoch style
+2024-10-20 23:36:42,105 DEBUG log--[39/240][0/391][client-0] train loss: 1.5852 cross-entropy loss: 0.6069
+2024-10-20 23:36:49,188 DEBUG log--[39/240][390/391][client-0] train loss: 1.5343 cross-entropy loss: 0.6462
+2024-10-20 23:36:49,461 DEBUG Epoch 0	Test (client-0):	Loss 0.6540 (0.6540)	Prec@1 76.562 (76.562)
+2024-10-20 23:36:49,575 DEBUG Epoch 50	Test (client-0):	Loss 0.6972 (0.6294)	Prec@1 75.781 (79.381)
+2024-10-20 23:36:49,682 DEBUG  * Prec@1 79.240
+2024-10-20 23:36:51,844 DEBUG Train in V2_epoch style
+2024-10-20 23:36:51,864 DEBUG log--[40/240][0/391][client-0] train loss: 1.5746 cross-entropy loss: 0.6852
+2024-10-20 23:36:58,684 DEBUG log--[40/240][390/391][client-0] train loss: 1.5637 cross-entropy loss: 0.6406
+2024-10-20 23:36:58,956 DEBUG Epoch 0	Test (client-0):	Loss 0.5723 (0.5723)	Prec@1 79.688 (79.688)
+2024-10-20 23:36:59,070 DEBUG Epoch 50	Test (client-0):	Loss 0.7335 (0.6362)	Prec@1 82.031 (79.565)
+2024-10-20 23:36:59,178 DEBUG  * Prec@1 79.770
+2024-10-20 23:37:00,739 DEBUG Train in V2_epoch style
+2024-10-20 23:37:00,762 DEBUG log--[41/240][0/391][client-0] train loss: 1.6006 cross-entropy loss: 0.6925
+2024-10-20 23:37:07,515 DEBUG log--[41/240][390/391][client-0] train loss: 1.5691 cross-entropy loss: 0.6293
+2024-10-20 23:37:07,785 DEBUG Epoch 0	Test (client-0):	Loss 0.5875 (0.5875)	Prec@1 78.906 (78.906)
+2024-10-20 23:37:07,893 DEBUG Epoch 50	Test (client-0):	Loss 0.7499 (0.6620)	Prec@1 73.438 (78.676)
+2024-10-20 23:37:08,001 DEBUG  * Prec@1 78.480
+2024-10-20 23:37:09,430 DEBUG the mean of mutal infor is:(-4.451), the est mean of mutal infor is:(-3.127)
+2024-10-20 23:37:12,485 DEBUG Train in V2_epoch style
+2024-10-20 23:37:12,507 DEBUG log--[42/240][0/391][client-0] train loss: 1.5602 cross-entropy loss: 0.6243
+2024-10-20 23:37:18,979 DEBUG log--[42/240][390/391][client-0] train loss: 1.5762 cross-entropy loss: 0.6258
+2024-10-20 23:37:19,244 DEBUG Epoch 0	Test (client-0):	Loss 0.6598 (0.6598)	Prec@1 77.344 (77.344)
+2024-10-20 23:37:19,359 DEBUG Epoch 50	Test (client-0):	Loss 0.6763 (0.6716)	Prec@1 81.250 (77.819)
+2024-10-20 23:37:19,467 DEBUG  * Prec@1 77.710
+2024-10-20 23:37:20,987 DEBUG Train in V2_epoch style
+2024-10-20 23:37:21,007 DEBUG log--[43/240][0/391][client-0] train loss: 1.5788 cross-entropy loss: 0.5535
+2024-10-20 23:37:27,682 DEBUG log--[43/240][390/391][client-0] train loss: 1.5979 cross-entropy loss: 0.6324
+2024-10-20 23:37:27,952 DEBUG Epoch 0	Test (client-0):	Loss 0.5588 (0.5588)	Prec@1 82.812 (82.812)
+2024-10-20 23:37:28,063 DEBUG Epoch 50	Test (client-0):	Loss 0.7180 (0.5956)	Prec@1 79.688 (80.193)
+2024-10-20 23:37:28,199 DEBUG  * Prec@1 80.020
+2024-10-20 23:37:29,714 DEBUG Train in V2_epoch style
+2024-10-20 23:37:29,734 DEBUG log--[44/240][0/391][client-0] train loss: 1.5332 cross-entropy loss: 0.5995
+2024-10-20 23:37:36,320 DEBUG log--[44/240][390/391][client-0] train loss: 1.5474 cross-entropy loss: 0.6309
+2024-10-20 23:37:36,591 DEBUG Epoch 0	Test (client-0):	Loss 0.7383 (0.7383)	Prec@1 75.781 (75.781)
+2024-10-20 23:37:36,703 DEBUG Epoch 50	Test (client-0):	Loss 0.6977 (0.6322)	Prec@1 78.125 (78.891)
+2024-10-20 23:37:36,810 DEBUG  * Prec@1 78.870
+2024-10-20 23:37:38,243 DEBUG Train in V2_epoch style
+2024-10-20 23:37:38,267 DEBUG log--[45/240][0/391][client-0] train loss: 1.5880 cross-entropy loss: 0.6046
+2024-10-20 23:37:44,952 DEBUG log--[45/240][390/391][client-0] train loss: 1.5591 cross-entropy loss: 0.6143
+2024-10-20 23:37:45,225 DEBUG Epoch 0	Test (client-0):	Loss 0.7149 (0.7149)	Prec@1 77.344 (77.344)
+2024-10-20 23:37:45,340 DEBUG Epoch 50	Test (client-0):	Loss 0.9132 (0.8070)	Prec@1 75.000 (75.015)
+2024-10-20 23:37:45,448 DEBUG  * Prec@1 74.970
+2024-10-20 23:37:46,912 DEBUG Train in V2_epoch style
+2024-10-20 23:37:46,934 DEBUG log--[46/240][0/391][client-0] train loss: 1.5759 cross-entropy loss: 0.7099
+2024-10-20 23:37:54,112 DEBUG log--[46/240][390/391][client-0] train loss: 1.4790 cross-entropy loss: 0.6213
+2024-10-20 23:37:54,391 DEBUG Epoch 0	Test (client-0):	Loss 0.7324 (0.7324)	Prec@1 75.781 (75.781)
+2024-10-20 23:37:54,505 DEBUG Epoch 50	Test (client-0):	Loss 0.7303 (0.7291)	Prec@1 76.562 (76.578)
+2024-10-20 23:37:54,612 DEBUG  * Prec@1 76.430
+2024-10-20 23:37:56,106 DEBUG Train in V2_epoch style
+2024-10-20 23:37:56,127 DEBUG log--[47/240][0/391][client-0] train loss: 1.6039 cross-entropy loss: 0.7241
+2024-10-20 23:38:02,996 DEBUG log--[47/240][390/391][client-0] train loss: 1.5229 cross-entropy loss: 0.6170
+2024-10-20 23:38:03,271 DEBUG Epoch 0	Test (client-0):	Loss 0.6382 (0.6382)	Prec@1 84.375 (84.375)
+2024-10-20 23:38:03,382 DEBUG Epoch 50	Test (client-0):	Loss 0.6826 (0.6188)	Prec@1 84.375 (80.453)
+2024-10-20 23:38:03,497 DEBUG  * Prec@1 80.540
+2024-10-20 23:38:05,065 DEBUG Train in V2_epoch style
+2024-10-20 23:38:05,089 DEBUG log--[48/240][0/391][client-0] train loss: 1.5729 cross-entropy loss: 0.7651
+2024-10-20 23:38:12,058 DEBUG log--[48/240][390/391][client-0] train loss: 1.5501 cross-entropy loss: 0.6129
+2024-10-20 23:38:12,342 DEBUG Epoch 0	Test (client-0):	Loss 0.7636 (0.7636)	Prec@1 71.875 (71.875)
+2024-10-20 23:38:12,456 DEBUG Epoch 50	Test (client-0):	Loss 0.7915 (0.7655)	Prec@1 76.562 (76.042)
+2024-10-20 23:38:12,566 DEBUG  * Prec@1 75.720
+2024-10-20 23:38:14,071 DEBUG Train in V2_epoch style
+2024-10-20 23:38:14,092 DEBUG log--[49/240][0/391][client-0] train loss: 1.5973 cross-entropy loss: 0.5502
+2024-10-20 23:38:20,792 DEBUG log--[49/240][390/391][client-0] train loss: 1.5565 cross-entropy loss: 0.6115
+2024-10-20 23:38:21,078 DEBUG Epoch 0	Test (client-0):	Loss 0.6914 (0.6914)	Prec@1 81.250 (81.250)
+2024-10-20 23:38:21,196 DEBUG Epoch 50	Test (client-0):	Loss 0.8842 (0.7490)	Prec@1 73.438 (76.976)
+2024-10-20 23:38:21,304 DEBUG  * Prec@1 76.720
+2024-10-20 23:38:22,804 DEBUG Train in V2_epoch style
+2024-10-20 23:38:22,826 DEBUG log--[50/240][0/391][client-0] train loss: 1.5572 cross-entropy loss: 0.5418
+2024-10-20 23:38:29,662 DEBUG log--[50/240][390/391][client-0] train loss: 1.5130 cross-entropy loss: 0.6077
+2024-10-20 23:38:29,938 DEBUG Epoch 0	Test (client-0):	Loss 0.8239 (0.8239)	Prec@1 71.094 (71.094)
+2024-10-20 23:38:30,054 DEBUG Epoch 50	Test (client-0):	Loss 0.9245 (0.8054)	Prec@1 75.000 (74.648)
+2024-10-20 23:38:30,188 DEBUG  * Prec@1 74.860
+2024-10-20 23:38:31,702 DEBUG Train in V2_epoch style
+2024-10-20 23:38:31,723 DEBUG log--[51/240][0/391][client-0] train loss: 1.6798 cross-entropy loss: 0.3611
+2024-10-20 23:38:38,524 DEBUG log--[51/240][390/391][client-0] train loss: 1.5918 cross-entropy loss: 0.6052
+2024-10-20 23:38:38,805 DEBUG Epoch 0	Test (client-0):	Loss 0.7111 (0.7111)	Prec@1 78.906 (78.906)
+2024-10-20 23:38:38,930 DEBUG Epoch 50	Test (client-0):	Loss 0.7179 (0.7141)	Prec@1 78.125 (77.926)
+2024-10-20 23:38:39,040 DEBUG  * Prec@1 78.160
+2024-10-20 23:38:40,454 DEBUG the mean of mutal infor is:(-4.471), the est mean of mutal infor is:(-3.174)
+2024-10-20 23:38:40,555 DEBUG Train in V2_epoch style
+2024-10-20 23:38:40,577 DEBUG log--[52/240][0/391][client-0] train loss: 1.6580 cross-entropy loss: 0.4918
+2024-10-20 23:38:47,341 DEBUG log--[52/240][390/391][client-0] train loss: 1.5834 cross-entropy loss: 0.6044
+2024-10-20 23:38:47,631 DEBUG Epoch 0	Test (client-0):	Loss 1.0528 (1.0528)	Prec@1 68.750 (68.750)
+2024-10-20 23:38:47,740 DEBUG Epoch 50	Test (client-0):	Loss 1.0432 (0.9883)	Prec@1 72.656 (70.542)
+2024-10-20 23:38:47,849 DEBUG  * Prec@1 70.610
+2024-10-20 23:38:49,417 DEBUG Train in V2_epoch style
+2024-10-20 23:38:49,439 DEBUG log--[53/240][0/391][client-0] train loss: 1.5880 cross-entropy loss: 0.5157
+2024-10-20 23:38:56,274 DEBUG log--[53/240][390/391][client-0] train loss: 1.5361 cross-entropy loss: 0.6014
+2024-10-20 23:38:56,543 DEBUG Epoch 0	Test (client-0):	Loss 0.5985 (0.5985)	Prec@1 78.906 (78.906)
+2024-10-20 23:38:56,652 DEBUG Epoch 50	Test (client-0):	Loss 0.6687 (0.6224)	Prec@1 80.469 (79.611)
+2024-10-20 23:38:56,761 DEBUG  * Prec@1 79.700
+2024-10-20 23:38:58,214 DEBUG Train in V2_epoch style
+2024-10-20 23:38:58,235 DEBUG log--[54/240][0/391][client-0] train loss: 1.5772 cross-entropy loss: 0.6166
+2024-10-20 23:39:04,851 DEBUG log--[54/240][390/391][client-0] train loss: 1.5414 cross-entropy loss: 0.5990
+2024-10-20 23:39:05,135 DEBUG Epoch 0	Test (client-0):	Loss 0.6795 (0.6795)	Prec@1 82.031 (82.031)
+2024-10-20 23:39:05,253 DEBUG Epoch 50	Test (client-0):	Loss 0.7040 (0.7824)	Prec@1 81.250 (75.950)
+2024-10-20 23:39:05,363 DEBUG  * Prec@1 76.030
+2024-10-20 23:39:06,827 DEBUG Train in V2_epoch style
+2024-10-20 23:39:06,850 DEBUG log--[55/240][0/391][client-0] train loss: 1.5265 cross-entropy loss: 0.5199
+2024-10-20 23:39:13,567 DEBUG log--[55/240][390/391][client-0] train loss: 1.5919 cross-entropy loss: 0.5990
+2024-10-20 23:39:13,850 DEBUG Epoch 0	Test (client-0):	Loss 0.5273 (0.5273)	Prec@1 82.812 (82.812)
+2024-10-20 23:39:13,960 DEBUG Epoch 50	Test (client-0):	Loss 0.5867 (0.5509)	Prec@1 81.250 (81.725)
+2024-10-20 23:39:14,075 DEBUG  * Prec@1 81.400
+2024-10-20 23:39:15,702 DEBUG Train in V2_epoch style
+2024-10-20 23:39:15,723 DEBUG log--[56/240][0/391][client-0] train loss: 1.6085 cross-entropy loss: 0.6411
+2024-10-20 23:39:22,599 DEBUG log--[56/240][390/391][client-0] train loss: 1.5893 cross-entropy loss: 0.5864
+2024-10-20 23:39:22,868 DEBUG Epoch 0	Test (client-0):	Loss 0.6193 (0.6193)	Prec@1 80.469 (80.469)
+2024-10-20 23:39:22,978 DEBUG Epoch 50	Test (client-0):	Loss 0.5931 (0.5989)	Prec@1 78.125 (79.473)
+2024-10-20 23:39:23,089 DEBUG  * Prec@1 79.690
+2024-10-20 23:39:24,649 DEBUG Train in V2_epoch style
+2024-10-20 23:39:24,671 DEBUG log--[57/240][0/391][client-0] train loss: 1.5955 cross-entropy loss: 0.6364
+2024-10-20 23:39:31,260 DEBUG log--[57/240][390/391][client-0] train loss: 1.5439 cross-entropy loss: 0.5892
+2024-10-20 23:39:31,540 DEBUG Epoch 0	Test (client-0):	Loss 0.7618 (0.7618)	Prec@1 69.531 (69.531)
+2024-10-20 23:39:31,662 DEBUG Epoch 50	Test (client-0):	Loss 0.8347 (0.8109)	Prec@1 72.656 (73.177)
+2024-10-20 23:39:31,772 DEBUG  * Prec@1 73.480
+2024-10-20 23:39:33,269 DEBUG Train in V2_epoch style
+2024-10-20 23:39:33,289 DEBUG log--[58/240][0/391][client-0] train loss: 1.4721 cross-entropy loss: 0.6896
+2024-10-20 23:39:40,044 DEBUG log--[58/240][390/391][client-0] train loss: 1.5698 cross-entropy loss: 0.5932
+2024-10-20 23:39:40,316 DEBUG Epoch 0	Test (client-0):	Loss 0.5180 (0.5180)	Prec@1 78.906 (78.906)
+2024-10-20 23:39:40,427 DEBUG Epoch 50	Test (client-0):	Loss 0.6211 (0.5274)	Prec@1 78.906 (81.296)
+2024-10-20 23:39:40,540 DEBUG  * Prec@1 81.440
+2024-10-20 23:39:42,106 DEBUG Train in V2_epoch style
+2024-10-20 23:39:42,127 DEBUG log--[59/240][0/391][client-0] train loss: 1.4425 cross-entropy loss: 0.5920
+2024-10-20 23:39:49,119 DEBUG log--[59/240][390/391][client-0] train loss: 1.5032 cross-entropy loss: 0.5913
+2024-10-20 23:39:49,402 DEBUG Epoch 0	Test (client-0):	Loss 0.6247 (0.6247)	Prec@1 81.250 (81.250)
+2024-10-20 23:39:49,510 DEBUG Epoch 50	Test (client-0):	Loss 0.7680 (0.6422)	Prec@1 77.344 (79.013)
+2024-10-20 23:39:49,618 DEBUG  * Prec@1 78.930
+2024-10-20 23:39:51,941 DEBUG Train in V2_epoch style
+2024-10-20 23:39:51,961 DEBUG log--[60/240][0/391][client-0] train loss: 1.5243 cross-entropy loss: 0.6614
+2024-10-20 23:39:58,693 DEBUG log--[60/240][390/391][client-0] train loss: 1.5198 cross-entropy loss: 0.4173
+2024-10-20 23:39:58,987 DEBUG Epoch 0	Test (client-0):	Loss 0.3389 (0.3389)	Prec@1 88.281 (88.281)
+2024-10-20 23:39:59,095 DEBUG Epoch 50	Test (client-0):	Loss 0.4332 (0.3910)	Prec@1 88.281 (87.132)
+2024-10-20 23:39:59,204 DEBUG  * Prec@1 87.210
+2024-10-20 23:40:00,744 DEBUG Train in V2_epoch style
+2024-10-20 23:40:00,765 DEBUG log--[61/240][0/391][client-0] train loss: 1.3934 cross-entropy loss: 0.2772
+2024-10-20 23:40:07,563 DEBUG log--[61/240][390/391][client-0] train loss: 1.3734 cross-entropy loss: 0.3689
+2024-10-20 23:40:07,848 DEBUG Epoch 0	Test (client-0):	Loss 0.2565 (0.2565)	Prec@1 92.188 (92.188)
+2024-10-20 23:40:07,959 DEBUG Epoch 50	Test (client-0):	Loss 0.4346 (0.3651)	Prec@1 88.281 (88.480)
+2024-10-20 23:40:08,070 DEBUG  * Prec@1 88.340
+2024-10-20 23:40:09,536 DEBUG the mean of mutal infor is:(-4.793), the est mean of mutal infor is:(-3.576)
+2024-10-20 23:40:09,641 DEBUG Train in V2_epoch style
+2024-10-20 23:40:09,661 DEBUG log--[62/240][0/391][client-0] train loss: 1.2435 cross-entropy loss: 0.2944
+2024-10-20 23:40:16,331 DEBUG log--[62/240][390/391][client-0] train loss: 1.2638 cross-entropy loss: 0.3493
+2024-10-20 23:40:16,623 DEBUG Epoch 0	Test (client-0):	Loss 0.2133 (0.2133)	Prec@1 92.969 (92.969)
+2024-10-20 23:40:16,731 DEBUG Epoch 50	Test (client-0):	Loss 0.4355 (0.3773)	Prec@1 86.719 (87.439)
+2024-10-20 23:40:16,846 DEBUG  * Prec@1 87.390
+2024-10-20 23:40:18,292 DEBUG Train in V2_epoch style
+2024-10-20 23:40:18,314 DEBUG log--[63/240][0/391][client-0] train loss: 1.2872 cross-entropy loss: 0.4679
+2024-10-20 23:40:25,099 DEBUG log--[63/240][390/391][client-0] train loss: 1.2380 cross-entropy loss: 0.3360
+2024-10-20 23:40:25,389 DEBUG Epoch 0	Test (client-0):	Loss 0.2465 (0.2465)	Prec@1 90.625 (90.625)
+2024-10-20 23:40:25,500 DEBUG Epoch 50	Test (client-0):	Loss 0.4256 (0.3574)	Prec@1 85.938 (87.975)
+2024-10-20 23:40:25,612 DEBUG  * Prec@1 87.930
+2024-10-20 23:40:27,124 DEBUG Train in V2_epoch style
+2024-10-20 23:40:27,144 DEBUG log--[64/240][0/391][client-0] train loss: 1.1765 cross-entropy loss: 0.3309
+2024-10-20 23:40:33,909 DEBUG log--[64/240][390/391][client-0] train loss: 1.1852 cross-entropy loss: 0.3258
+2024-10-20 23:40:34,205 DEBUG Epoch 0	Test (client-0):	Loss 0.2353 (0.2353)	Prec@1 89.844 (89.844)
+2024-10-20 23:40:34,312 DEBUG Epoch 50	Test (client-0):	Loss 0.3811 (0.3589)	Prec@1 87.500 (87.960)
+2024-10-20 23:40:34,422 DEBUG  * Prec@1 87.880
+2024-10-20 23:40:35,859 DEBUG Train in V2_epoch style
+2024-10-20 23:40:35,881 DEBUG log--[65/240][0/391][client-0] train loss: 1.1933 cross-entropy loss: 0.2913
+2024-10-20 23:40:42,790 DEBUG log--[65/240][390/391][client-0] train loss: 1.1405 cross-entropy loss: 0.3188
+2024-10-20 23:40:43,087 DEBUG Epoch 0	Test (client-0):	Loss 0.2963 (0.2963)	Prec@1 90.625 (90.625)
+2024-10-20 23:40:43,199 DEBUG Epoch 50	Test (client-0):	Loss 0.6037 (0.4076)	Prec@1 85.938 (86.642)
+2024-10-20 23:40:43,329 DEBUG  * Prec@1 86.770
+2024-10-20 23:40:44,816 DEBUG Train in V2_epoch style
+2024-10-20 23:40:44,839 DEBUG log--[66/240][0/391][client-0] train loss: 1.0917 cross-entropy loss: 0.4187
+2024-10-20 23:40:51,622 DEBUG log--[66/240][390/391][client-0] train loss: 1.1279 cross-entropy loss: 0.3134
+2024-10-20 23:40:51,912 DEBUG Epoch 0	Test (client-0):	Loss 0.3673 (0.3673)	Prec@1 87.500 (87.500)
+2024-10-20 23:40:52,021 DEBUG Epoch 50	Test (client-0):	Loss 0.5053 (0.4041)	Prec@1 86.719 (86.795)
+2024-10-20 23:40:52,133 DEBUG  * Prec@1 86.920
+2024-10-20 23:40:53,565 DEBUG Train in V2_epoch style
+2024-10-20 23:40:53,587 DEBUG log--[67/240][0/391][client-0] train loss: 1.1772 cross-entropy loss: 0.3603
+2024-10-20 23:41:00,409 DEBUG log--[67/240][390/391][client-0] train loss: 1.1264 cross-entropy loss: 0.3041
+2024-10-20 23:41:00,696 DEBUG Epoch 0	Test (client-0):	Loss 0.3703 (0.3703)	Prec@1 88.281 (88.281)
+2024-10-20 23:41:00,812 DEBUG Epoch 50	Test (client-0):	Loss 0.4868 (0.3942)	Prec@1 89.844 (87.040)
+2024-10-20 23:41:00,925 DEBUG  * Prec@1 87.320
+2024-10-20 23:41:02,399 DEBUG Train in V2_epoch style
+2024-10-20 23:41:02,421 DEBUG log--[68/240][0/391][client-0] train loss: 1.1238 cross-entropy loss: 0.2156
+2024-10-20 23:41:09,119 DEBUG log--[68/240][390/391][client-0] train loss: 1.0880 cross-entropy loss: 0.3046
+2024-10-20 23:41:09,411 DEBUG Epoch 0	Test (client-0):	Loss 0.3029 (0.3029)	Prec@1 89.062 (89.062)
+2024-10-20 23:41:09,526 DEBUG Epoch 50	Test (client-0):	Loss 0.4561 (0.3977)	Prec@1 86.719 (87.117)
+2024-10-20 23:41:09,639 DEBUG  * Prec@1 87.100
+2024-10-20 23:41:11,102 DEBUG Train in V2_epoch style
+2024-10-20 23:41:11,123 DEBUG log--[69/240][0/391][client-0] train loss: 1.0310 cross-entropy loss: 0.2967
+2024-10-20 23:41:17,899 DEBUG log--[69/240][390/391][client-0] train loss: 1.0411 cross-entropy loss: 0.3055
+2024-10-20 23:41:18,180 DEBUG Epoch 0	Test (client-0):	Loss 0.3464 (0.3464)	Prec@1 88.281 (88.281)
+2024-10-20 23:41:18,291 DEBUG Epoch 50	Test (client-0):	Loss 0.4640 (0.3821)	Prec@1 89.062 (87.577)
+2024-10-20 23:41:18,404 DEBUG  * Prec@1 87.550
+2024-10-20 23:41:19,893 DEBUG Train in V2_epoch style
+2024-10-20 23:41:19,914 DEBUG log--[70/240][0/391][client-0] train loss: 1.0632 cross-entropy loss: 0.2682
+2024-10-20 23:41:26,561 DEBUG log--[70/240][390/391][client-0] train loss: 1.0593 cross-entropy loss: 0.2977
+2024-10-20 23:41:26,856 DEBUG Epoch 0	Test (client-0):	Loss 0.2679 (0.2679)	Prec@1 92.188 (92.188)
+2024-10-20 23:41:26,966 DEBUG Epoch 50	Test (client-0):	Loss 0.4258 (0.3699)	Prec@1 85.938 (87.653)
+2024-10-20 23:41:27,077 DEBUG  * Prec@1 87.860
+2024-10-20 23:41:28,507 DEBUG Train in V2_epoch style
+2024-10-20 23:41:28,530 DEBUG log--[71/240][0/391][client-0] train loss: 1.0933 cross-entropy loss: 0.1911
+2024-10-20 23:41:35,487 DEBUG log--[71/240][390/391][client-0] train loss: 1.0649 cross-entropy loss: 0.2897
+2024-10-20 23:41:35,784 DEBUG Epoch 0	Test (client-0):	Loss 0.3272 (0.3272)	Prec@1 88.281 (88.281)
+2024-10-20 23:41:35,898 DEBUG Epoch 50	Test (client-0):	Loss 0.4741 (0.3764)	Prec@1 88.281 (87.730)
+2024-10-20 23:41:36,013 DEBUG  * Prec@1 87.940
+2024-10-20 23:41:37,391 DEBUG the mean of mutal infor is:(-5.067), the est mean of mutal infor is:(-3.894)
+2024-10-20 23:41:37,493 DEBUG Train in V2_epoch style
+2024-10-20 23:41:37,521 DEBUG log--[72/240][0/391][client-0] train loss: 1.0728 cross-entropy loss: 0.2559
+2024-10-20 23:41:44,848 DEBUG log--[72/240][390/391][client-0] train loss: 1.0491 cross-entropy loss: 0.2890
+2024-10-20 23:41:45,140 DEBUG Epoch 0	Test (client-0):	Loss 0.3483 (0.3483)	Prec@1 89.062 (89.062)
+2024-10-20 23:41:45,258 DEBUG Epoch 50	Test (client-0):	Loss 0.3295 (0.3652)	Prec@1 89.062 (87.960)
+2024-10-20 23:41:45,369 DEBUG  * Prec@1 87.970
+2024-10-20 23:41:46,822 DEBUG Train in V2_epoch style
+2024-10-20 23:41:46,844 DEBUG log--[73/240][0/391][client-0] train loss: 1.0999 cross-entropy loss: 0.2400
+2024-10-20 23:41:53,686 DEBUG log--[73/240][390/391][client-0] train loss: 1.0266 cross-entropy loss: 0.2923
+2024-10-20 23:41:53,972 DEBUG Epoch 0	Test (client-0):	Loss 0.5505 (0.5505)	Prec@1 83.594 (83.594)
+2024-10-20 23:41:54,082 DEBUG Epoch 50	Test (client-0):	Loss 0.4776 (0.4446)	Prec@1 87.500 (85.846)
+2024-10-20 23:41:54,196 DEBUG  * Prec@1 85.860
+2024-10-20 23:41:55,661 DEBUG Train in V2_epoch style
+2024-10-20 23:41:55,682 DEBUG log--[74/240][0/391][client-0] train loss: 1.0157 cross-entropy loss: 0.1775
+2024-10-20 23:42:02,510 DEBUG log--[74/240][390/391][client-0] train loss: 1.0298 cross-entropy loss: 0.2896
+2024-10-20 23:42:02,815 DEBUG Epoch 0	Test (client-0):	Loss 0.3587 (0.3587)	Prec@1 88.281 (88.281)
+2024-10-20 23:42:02,924 DEBUG Epoch 50	Test (client-0):	Loss 0.4380 (0.4407)	Prec@1 87.500 (85.708)
+2024-10-20 23:42:03,037 DEBUG  * Prec@1 85.430
+2024-10-20 23:42:04,485 DEBUG Train in V2_epoch style
+2024-10-20 23:42:04,507 DEBUG log--[75/240][0/391][client-0] train loss: 1.0396 cross-entropy loss: 0.3668
+2024-10-20 23:42:11,339 DEBUG log--[75/240][390/391][client-0] train loss: 1.0382 cross-entropy loss: 0.2870
+2024-10-20 23:42:11,638 DEBUG Epoch 0	Test (client-0):	Loss 0.3159 (0.3159)	Prec@1 91.406 (91.406)
+2024-10-20 23:42:11,746 DEBUG Epoch 50	Test (client-0):	Loss 0.4140 (0.3821)	Prec@1 86.719 (87.760)
+2024-10-20 23:42:11,858 DEBUG  * Prec@1 87.940
+2024-10-20 23:42:13,324 DEBUG Train in V2_epoch style
+2024-10-20 23:42:13,346 DEBUG log--[76/240][0/391][client-0] train loss: 1.0269 cross-entropy loss: 0.2804
+2024-10-20 23:42:20,414 DEBUG log--[76/240][390/391][client-0] train loss: 1.0243 cross-entropy loss: 0.2848
+2024-10-20 23:42:20,706 DEBUG Epoch 0	Test (client-0):	Loss 0.3263 (0.3263)	Prec@1 89.062 (89.062)
+2024-10-20 23:42:20,817 DEBUG Epoch 50	Test (client-0):	Loss 0.4274 (0.3869)	Prec@1 88.281 (87.286)
+2024-10-20 23:42:20,929 DEBUG  * Prec@1 87.450
+2024-10-20 23:42:22,417 DEBUG Train in V2_epoch style
+2024-10-20 23:42:22,438 DEBUG log--[77/240][0/391][client-0] train loss: 1.0278 cross-entropy loss: 0.3014
+2024-10-20 23:42:29,221 DEBUG log--[77/240][390/391][client-0] train loss: 1.0330 cross-entropy loss: 0.2879
+2024-10-20 23:42:29,525 DEBUG Epoch 0	Test (client-0):	Loss 0.3421 (0.3421)	Prec@1 89.062 (89.062)
+2024-10-20 23:42:29,632 DEBUG Epoch 50	Test (client-0):	Loss 0.5050 (0.4011)	Prec@1 86.719 (86.811)
+2024-10-20 23:42:29,744 DEBUG  * Prec@1 86.930
+2024-10-20 23:42:31,242 DEBUG Train in V2_epoch style
+2024-10-20 23:42:31,264 DEBUG log--[78/240][0/391][client-0] train loss: 1.1047 cross-entropy loss: 0.3585
+2024-10-20 23:42:38,045 DEBUG log--[78/240][390/391][client-0] train loss: 1.0286 cross-entropy loss: 0.2820
+2024-10-20 23:42:38,348 DEBUG Epoch 0	Test (client-0):	Loss 0.3497 (0.3497)	Prec@1 89.062 (89.062)
+2024-10-20 23:42:38,459 DEBUG Epoch 50	Test (client-0):	Loss 0.4023 (0.3898)	Prec@1 89.062 (87.132)
+2024-10-20 23:42:38,574 DEBUG  * Prec@1 86.990
+2024-10-20 23:42:40,082 DEBUG Train in V2_epoch style
+2024-10-20 23:42:40,104 DEBUG log--[79/240][0/391][client-0] train loss: 1.0436 cross-entropy loss: 0.2450
+2024-10-20 23:42:46,952 DEBUG log--[79/240][390/391][client-0] train loss: 0.9895 cross-entropy loss: 0.2826
+2024-10-20 23:42:47,248 DEBUG Epoch 0	Test (client-0):	Loss 0.3795 (0.3795)	Prec@1 88.281 (88.281)
+2024-10-20 23:42:47,358 DEBUG Epoch 50	Test (client-0):	Loss 0.5505 (0.4257)	Prec@1 88.281 (86.749)
+2024-10-20 23:42:47,501 DEBUG  * Prec@1 86.710
+2024-10-20 23:42:49,034 DEBUG Train in V2_epoch style
+2024-10-20 23:42:49,055 DEBUG log--[80/240][0/391][client-0] train loss: 1.0240 cross-entropy loss: 0.2184
+2024-10-20 23:42:55,767 DEBUG log--[80/240][390/391][client-0] train loss: 1.0094 cross-entropy loss: 0.2856
+2024-10-20 23:42:56,071 DEBUG Epoch 0	Test (client-0):	Loss 0.3616 (0.3616)	Prec@1 86.719 (86.719)
+2024-10-20 23:42:56,187 DEBUG Epoch 50	Test (client-0):	Loss 0.5174 (0.3970)	Prec@1 85.156 (87.010)
+2024-10-20 23:42:56,301 DEBUG  * Prec@1 86.940
+2024-10-20 23:42:57,774 DEBUG Train in V2_epoch style
+2024-10-20 23:42:57,795 DEBUG log--[81/240][0/391][client-0] train loss: 1.0735 cross-entropy loss: 0.2805
+2024-10-20 23:43:04,717 DEBUG log--[81/240][390/391][client-0] train loss: 1.0240 cross-entropy loss: 0.2808
+2024-10-20 23:43:05,012 DEBUG Epoch 0	Test (client-0):	Loss 0.6145 (0.6145)	Prec@1 82.812 (82.812)
+2024-10-20 23:43:05,123 DEBUG Epoch 50	Test (client-0):	Loss 0.6859 (0.5227)	Prec@1 80.469 (84.161)
+2024-10-20 23:43:05,270 DEBUG  * Prec@1 84.110
+2024-10-20 23:43:06,725 DEBUG the mean of mutal infor is:(-5.119), the est mean of mutal infor is:(-3.973)
+2024-10-20 23:43:09,957 DEBUG Train in V2_epoch style
+2024-10-20 23:43:09,979 DEBUG log--[82/240][0/391][client-0] train loss: 0.9679 cross-entropy loss: 0.4040
+2024-10-20 23:43:16,954 DEBUG log--[82/240][390/391][client-0] train loss: 0.9972 cross-entropy loss: 0.2755
+2024-10-20 23:43:17,262 DEBUG Epoch 0	Test (client-0):	Loss 0.4368 (0.4368)	Prec@1 87.500 (87.500)
+2024-10-20 23:43:17,372 DEBUG Epoch 50	Test (client-0):	Loss 0.6514 (0.4872)	Prec@1 81.250 (84.528)
+2024-10-20 23:43:17,483 DEBUG  * Prec@1 84.660
+2024-10-20 23:43:18,933 DEBUG Train in V2_epoch style
+2024-10-20 23:43:18,956 DEBUG log--[83/240][0/391][client-0] train loss: 1.0156 cross-entropy loss: 0.2460
+2024-10-20 23:43:26,016 DEBUG log--[83/240][390/391][client-0] train loss: 1.0019 cross-entropy loss: 0.2763
+2024-10-20 23:43:26,324 DEBUG Epoch 0	Test (client-0):	Loss 0.4090 (0.4090)	Prec@1 85.156 (85.156)
+2024-10-20 23:43:26,441 DEBUG Epoch 50	Test (client-0):	Loss 0.5203 (0.4144)	Prec@1 84.375 (86.795)
+2024-10-20 23:43:26,557 DEBUG  * Prec@1 86.740
+2024-10-20 23:43:28,069 DEBUG Train in V2_epoch style
+2024-10-20 23:43:28,090 DEBUG log--[84/240][0/391][client-0] train loss: 0.9440 cross-entropy loss: 0.2242
+2024-10-20 23:43:35,029 DEBUG log--[84/240][390/391][client-0] train loss: 1.0023 cross-entropy loss: 0.2729
+2024-10-20 23:43:35,327 DEBUG Epoch 0	Test (client-0):	Loss 0.2721 (0.2721)	Prec@1 89.062 (89.062)
+2024-10-20 23:43:35,437 DEBUG Epoch 50	Test (client-0):	Loss 0.3971 (0.4058)	Prec@1 90.625 (86.811)
+2024-10-20 23:43:35,553 DEBUG  * Prec@1 86.760
+2024-10-20 23:43:37,054 DEBUG Train in V2_epoch style
+2024-10-20 23:43:37,080 DEBUG log--[85/240][0/391][client-0] train loss: 1.0388 cross-entropy loss: 0.2941
+2024-10-20 23:43:44,093 DEBUG log--[85/240][390/391][client-0] train loss: 1.0254 cross-entropy loss: 0.2791
+2024-10-20 23:43:44,399 DEBUG Epoch 0	Test (client-0):	Loss 0.4182 (0.4182)	Prec@1 88.281 (88.281)
+2024-10-20 23:43:44,508 DEBUG Epoch 50	Test (client-0):	Loss 0.5343 (0.4544)	Prec@1 85.938 (85.616)
+2024-10-20 23:43:44,625 DEBUG  * Prec@1 85.770
+2024-10-20 23:43:46,102 DEBUG Train in V2_epoch style
+2024-10-20 23:43:46,123 DEBUG log--[86/240][0/391][client-0] train loss: 1.0071 cross-entropy loss: 0.3083
+2024-10-20 23:43:52,809 DEBUG log--[86/240][390/391][client-0] train loss: 1.0148 cross-entropy loss: 0.2687
+2024-10-20 23:43:53,110 DEBUG Epoch 0	Test (client-0):	Loss 0.4378 (0.4378)	Prec@1 86.719 (86.719)
+2024-10-20 23:43:53,221 DEBUG Epoch 50	Test (client-0):	Loss 0.4135 (0.4192)	Prec@1 85.156 (86.520)
+2024-10-20 23:43:53,337 DEBUG  * Prec@1 86.560
+2024-10-20 23:43:54,801 DEBUG Train in V2_epoch style
+2024-10-20 23:43:54,822 DEBUG log--[87/240][0/391][client-0] train loss: 0.9569 cross-entropy loss: 0.2586
+2024-10-20 23:44:01,572 DEBUG log--[87/240][390/391][client-0] train loss: 0.9917 cross-entropy loss: 0.2758
+2024-10-20 23:44:01,875 DEBUG Epoch 0	Test (client-0):	Loss 0.4306 (0.4306)	Prec@1 85.938 (85.938)
+2024-10-20 23:44:01,984 DEBUG Epoch 50	Test (client-0):	Loss 0.5200 (0.4518)	Prec@1 81.250 (85.631)
+2024-10-20 23:44:02,097 DEBUG  * Prec@1 85.650
+2024-10-20 23:44:03,531 DEBUG Train in V2_epoch style
+2024-10-20 23:44:03,552 DEBUG log--[88/240][0/391][client-0] train loss: 1.0795 cross-entropy loss: 0.2870
+2024-10-20 23:44:10,641 DEBUG log--[88/240][390/391][client-0] train loss: 1.0279 cross-entropy loss: 0.2665
+2024-10-20 23:44:10,957 DEBUG Epoch 0	Test (client-0):	Loss 0.3750 (0.3750)	Prec@1 87.500 (87.500)
+2024-10-20 23:44:11,071 DEBUG Epoch 50	Test (client-0):	Loss 0.3908 (0.4046)	Prec@1 88.281 (87.362)
+2024-10-20 23:44:11,185 DEBUG  * Prec@1 87.230
+2024-10-20 23:44:12,620 DEBUG Train in V2_epoch style
+2024-10-20 23:44:12,642 DEBUG log--[89/240][0/391][client-0] train loss: 1.0729 cross-entropy loss: 0.3604
+2024-10-20 23:44:19,349 DEBUG log--[89/240][390/391][client-0] train loss: 1.0163 cross-entropy loss: 0.2722
+2024-10-20 23:44:19,645 DEBUG Epoch 0	Test (client-0):	Loss 0.3698 (0.3698)	Prec@1 89.062 (89.062)
+2024-10-20 23:44:19,755 DEBUG Epoch 50	Test (client-0):	Loss 0.4647 (0.4605)	Prec@1 89.062 (85.463)
+2024-10-20 23:44:19,872 DEBUG  * Prec@1 85.670
+2024-10-20 23:44:21,424 DEBUG Train in V2_epoch style
+2024-10-20 23:44:21,446 DEBUG log--[90/240][0/391][client-0] train loss: 1.0284 cross-entropy loss: 0.1783
+2024-10-20 23:44:28,107 DEBUG log--[90/240][390/391][client-0] train loss: 1.0039 cross-entropy loss: 0.2708
+2024-10-20 23:44:28,416 DEBUG Epoch 0	Test (client-0):	Loss 0.3369 (0.3369)	Prec@1 90.625 (90.625)
+2024-10-20 23:44:28,527 DEBUG Epoch 50	Test (client-0):	Loss 0.6069 (0.4215)	Prec@1 86.719 (86.734)
+2024-10-20 23:44:28,640 DEBUG  * Prec@1 86.700
+2024-10-20 23:44:30,135 DEBUG Train in V2_epoch style
+2024-10-20 23:44:30,156 DEBUG log--[91/240][0/391][client-0] train loss: 1.0279 cross-entropy loss: 0.2917
+2024-10-20 23:44:37,042 DEBUG log--[91/240][390/391][client-0] train loss: 1.0238 cross-entropy loss: 0.2661
+2024-10-20 23:44:37,343 DEBUG Epoch 0	Test (client-0):	Loss 0.4637 (0.4637)	Prec@1 84.375 (84.375)
+2024-10-20 23:44:37,455 DEBUG Epoch 50	Test (client-0):	Loss 0.4921 (0.4606)	Prec@1 85.938 (85.340)
+2024-10-20 23:44:37,568 DEBUG  * Prec@1 85.790
+2024-10-20 23:44:38,985 DEBUG the mean of mutal infor is:(-5.109), the est mean of mutal infor is:(-3.956)
+2024-10-20 23:44:39,088 DEBUG Train in V2_epoch style
+2024-10-20 23:44:39,110 DEBUG log--[92/240][0/391][client-0] train loss: 1.0244 cross-entropy loss: 0.3308
+2024-10-20 23:44:46,173 DEBUG log--[92/240][390/391][client-0] train loss: 1.0114 cross-entropy loss: 0.2659
+2024-10-20 23:44:46,490 DEBUG Epoch 0	Test (client-0):	Loss 0.5730 (0.5730)	Prec@1 82.031 (82.031)
+2024-10-20 23:44:46,611 DEBUG Epoch 50	Test (client-0):	Loss 0.7660 (0.5884)	Prec@1 78.906 (82.996)
+2024-10-20 23:44:46,728 DEBUG  * Prec@1 83.070
+2024-10-20 23:44:48,303 DEBUG Train in V2_epoch style
+2024-10-20 23:44:48,326 DEBUG log--[93/240][0/391][client-0] train loss: 0.9936 cross-entropy loss: 0.2407
+2024-10-20 23:44:55,342 DEBUG log--[93/240][390/391][client-0] train loss: 1.0261 cross-entropy loss: 0.2670
+2024-10-20 23:44:55,642 DEBUG Epoch 0	Test (client-0):	Loss 0.3458 (0.3458)	Prec@1 88.281 (88.281)
+2024-10-20 23:44:55,753 DEBUG Epoch 50	Test (client-0):	Loss 0.4982 (0.3785)	Prec@1 86.719 (87.638)
+2024-10-20 23:44:55,901 DEBUG  * Prec@1 88.030
+2024-10-20 23:44:57,352 DEBUG Train in V2_epoch style
+2024-10-20 23:44:57,375 DEBUG log--[94/240][0/391][client-0] train loss: 1.0045 cross-entropy loss: 0.3446
+2024-10-20 23:45:04,255 DEBUG log--[94/240][390/391][client-0] train loss: 1.0065 cross-entropy loss: 0.2568
+2024-10-20 23:45:04,566 DEBUG Epoch 0	Test (client-0):	Loss 0.3637 (0.3637)	Prec@1 88.281 (88.281)
+2024-10-20 23:45:04,678 DEBUG Epoch 50	Test (client-0):	Loss 0.5984 (0.4153)	Prec@1 82.812 (86.703)
+2024-10-20 23:45:04,792 DEBUG  * Prec@1 87.010
+2024-10-20 23:45:06,282 DEBUG Train in V2_epoch style
+2024-10-20 23:45:06,304 DEBUG log--[95/240][0/391][client-0] train loss: 1.0172 cross-entropy loss: 0.1660
+2024-10-20 23:45:13,007 DEBUG log--[95/240][390/391][client-0] train loss: 1.0126 cross-entropy loss: 0.2626
+2024-10-20 23:45:13,322 DEBUG Epoch 0	Test (client-0):	Loss 0.4020 (0.4020)	Prec@1 85.938 (85.938)
+2024-10-20 23:45:13,433 DEBUG Epoch 50	Test (client-0):	Loss 0.5733 (0.4663)	Prec@1 81.250 (85.570)
+2024-10-20 23:45:13,545 DEBUG  * Prec@1 85.800
+2024-10-20 23:45:15,043 DEBUG Train in V2_epoch style
+2024-10-20 23:45:15,065 DEBUG log--[96/240][0/391][client-0] train loss: 1.0517 cross-entropy loss: 0.2623
+2024-10-20 23:45:21,768 DEBUG log--[96/240][390/391][client-0] train loss: 1.0155 cross-entropy loss: 0.2611
+2024-10-20 23:45:22,080 DEBUG Epoch 0	Test (client-0):	Loss 0.3579 (0.3579)	Prec@1 88.281 (88.281)
+2024-10-20 23:45:22,194 DEBUG Epoch 50	Test (client-0):	Loss 0.4961 (0.4158)	Prec@1 83.594 (86.627)
+2024-10-20 23:45:22,312 DEBUG  * Prec@1 86.700
+2024-10-20 23:45:23,868 DEBUG Train in V2_epoch style
+2024-10-20 23:45:23,888 DEBUG log--[97/240][0/391][client-0] train loss: 0.9200 cross-entropy loss: 0.3965
+2024-10-20 23:45:30,944 DEBUG log--[97/240][390/391][client-0] train loss: 1.0025 cross-entropy loss: 0.2606
+2024-10-20 23:45:31,244 DEBUG Epoch 0	Test (client-0):	Loss 0.3493 (0.3493)	Prec@1 89.844 (89.844)
+2024-10-20 23:45:31,354 DEBUG Epoch 50	Test (client-0):	Loss 0.5669 (0.4343)	Prec@1 81.250 (86.566)
+2024-10-20 23:45:31,471 DEBUG  * Prec@1 86.670
+2024-10-20 23:45:32,993 DEBUG Train in V2_epoch style
+2024-10-20 23:45:33,014 DEBUG log--[98/240][0/391][client-0] train loss: 1.0324 cross-entropy loss: 0.2118
+2024-10-20 23:45:40,026 DEBUG log--[98/240][390/391][client-0] train loss: 1.0017 cross-entropy loss: 0.2610
+2024-10-20 23:45:40,334 DEBUG Epoch 0	Test (client-0):	Loss 0.3644 (0.3644)	Prec@1 90.625 (90.625)
+2024-10-20 23:45:40,442 DEBUG Epoch 50	Test (client-0):	Loss 0.5102 (0.4366)	Prec@1 84.375 (86.719)
+2024-10-20 23:45:40,557 DEBUG  * Prec@1 86.710
+2024-10-20 23:45:42,047 DEBUG Train in V2_epoch style
+2024-10-20 23:45:42,068 DEBUG log--[99/240][0/391][client-0] train loss: 0.9959 cross-entropy loss: 0.1500
+2024-10-20 23:45:48,894 DEBUG log--[99/240][390/391][client-0] train loss: 1.0195 cross-entropy loss: 0.2602
+2024-10-20 23:45:49,211 DEBUG Epoch 0	Test (client-0):	Loss 0.3466 (0.3466)	Prec@1 89.844 (89.844)
+2024-10-20 23:45:49,323 DEBUG Epoch 50	Test (client-0):	Loss 0.5759 (0.4667)	Prec@1 84.375 (85.876)
+2024-10-20 23:45:49,472 DEBUG  * Prec@1 85.930
+2024-10-20 23:45:50,958 DEBUG Train in V2_epoch style
+2024-10-20 23:45:50,981 DEBUG log--[100/240][0/391][client-0] train loss: 1.0280 cross-entropy loss: 0.1480
+2024-10-20 23:45:57,779 DEBUG log--[100/240][390/391][client-0] train loss: 0.9834 cross-entropy loss: 0.2567
+2024-10-20 23:45:58,082 DEBUG Epoch 0	Test (client-0):	Loss 0.4221 (0.4221)	Prec@1 85.938 (85.938)
+2024-10-20 23:45:58,191 DEBUG Epoch 50	Test (client-0):	Loss 0.5087 (0.5168)	Prec@1 83.594 (84.115)
+2024-10-20 23:45:58,308 DEBUG  * Prec@1 84.110
+2024-10-20 23:45:59,880 DEBUG Train in V2_epoch style
+2024-10-20 23:45:59,902 DEBUG log--[101/240][0/391][client-0] train loss: 1.1073 cross-entropy loss: 0.2471
+2024-10-20 23:46:06,762 DEBUG log--[101/240][390/391][client-0] train loss: 1.0193 cross-entropy loss: 0.2570
+2024-10-20 23:46:07,065 DEBUG Epoch 0	Test (client-0):	Loss 0.4012 (0.4012)	Prec@1 85.156 (85.156)
+2024-10-20 23:46:07,173 DEBUG Epoch 50	Test (client-0):	Loss 0.4977 (0.4229)	Prec@1 85.938 (86.566)
+2024-10-20 23:46:07,309 DEBUG  * Prec@1 86.920
+2024-10-20 23:46:08,834 DEBUG the mean of mutal infor is:(-5.079), the est mean of mutal infor is:(-3.931)
+2024-10-20 23:46:08,932 DEBUG Train in V2_epoch style
+2024-10-20 23:46:08,954 DEBUG log--[102/240][0/391][client-0] train loss: 1.0387 cross-entropy loss: 0.3341
+2024-10-20 23:46:15,799 DEBUG log--[102/240][390/391][client-0] train loss: 1.0226 cross-entropy loss: 0.2540
+2024-10-20 23:46:16,105 DEBUG Epoch 0	Test (client-0):	Loss 0.3868 (0.3868)	Prec@1 87.500 (87.500)
+2024-10-20 23:46:16,213 DEBUG Epoch 50	Test (client-0):	Loss 0.4637 (0.4015)	Prec@1 87.500 (87.224)
+2024-10-20 23:46:16,330 DEBUG  * Prec@1 87.070
+2024-10-20 23:46:17,896 DEBUG Train in V2_epoch style
+2024-10-20 23:46:17,918 DEBUG log--[103/240][0/391][client-0] train loss: 1.0572 cross-entropy loss: 0.2471
+2024-10-20 23:46:25,004 DEBUG log--[103/240][390/391][client-0] train loss: 1.0245 cross-entropy loss: 0.2534
+2024-10-20 23:46:25,309 DEBUG Epoch 0	Test (client-0):	Loss 0.3508 (0.3508)	Prec@1 86.719 (86.719)
+2024-10-20 23:46:25,419 DEBUG Epoch 50	Test (client-0):	Loss 0.5004 (0.4228)	Prec@1 85.156 (86.994)
+2024-10-20 23:46:25,537 DEBUG  * Prec@1 87.320
+2024-10-20 23:46:27,140 DEBUG Train in V2_epoch style
+2024-10-20 23:46:27,163 DEBUG log--[104/240][0/391][client-0] train loss: 0.9846 cross-entropy loss: 0.1349
+2024-10-20 23:46:33,852 DEBUG log--[104/240][390/391][client-0] train loss: 0.9860 cross-entropy loss: 0.2524
+2024-10-20 23:46:34,179 DEBUG Epoch 0	Test (client-0):	Loss 0.3338 (0.3338)	Prec@1 91.406 (91.406)
+2024-10-20 23:46:34,289 DEBUG Epoch 50	Test (client-0):	Loss 0.5351 (0.4376)	Prec@1 80.469 (86.489)
+2024-10-20 23:46:34,403 DEBUG  * Prec@1 86.510
+2024-10-20 23:46:35,928 DEBUG Train in V2_epoch style
+2024-10-20 23:46:35,950 DEBUG log--[105/240][0/391][client-0] train loss: 1.0839 cross-entropy loss: 0.2136
+2024-10-20 23:46:42,758 DEBUG log--[105/240][390/391][client-0] train loss: 1.0112 cross-entropy loss: 0.2453
+2024-10-20 23:46:43,060 DEBUG Epoch 0	Test (client-0):	Loss 0.4638 (0.4638)	Prec@1 86.719 (86.719)
+2024-10-20 23:46:43,171 DEBUG Epoch 50	Test (client-0):	Loss 0.4594 (0.4733)	Prec@1 88.281 (86.336)
+2024-10-20 23:46:43,287 DEBUG  * Prec@1 86.370
+2024-10-20 23:46:44,765 DEBUG Train in V2_epoch style
+2024-10-20 23:46:44,787 DEBUG log--[106/240][0/391][client-0] train loss: 1.0548 cross-entropy loss: 0.1807
+2024-10-20 23:46:51,837 DEBUG log--[106/240][390/391][client-0] train loss: 1.0070 cross-entropy loss: 0.2555
+2024-10-20 23:46:52,137 DEBUG Epoch 0	Test (client-0):	Loss 0.4515 (0.4515)	Prec@1 85.156 (85.156)
+2024-10-20 23:46:52,249 DEBUG Epoch 50	Test (client-0):	Loss 0.6502 (0.4989)	Prec@1 82.812 (84.850)
+2024-10-20 23:46:52,368 DEBUG  * Prec@1 84.680
+2024-10-20 23:46:53,880 DEBUG Train in V2_epoch style
+2024-10-20 23:46:53,903 DEBUG log--[107/240][0/391][client-0] train loss: 1.1425 cross-entropy loss: 0.3770
+2024-10-20 23:47:00,620 DEBUG log--[107/240][390/391][client-0] train loss: 1.0444 cross-entropy loss: 0.2514
+2024-10-20 23:47:00,930 DEBUG Epoch 0	Test (client-0):	Loss 0.5305 (0.5305)	Prec@1 84.375 (84.375)
+2024-10-20 23:47:01,049 DEBUG Epoch 50	Test (client-0):	Loss 0.6099 (0.5243)	Prec@1 84.375 (84.191)
+2024-10-20 23:47:01,168 DEBUG  * Prec@1 84.360
+2024-10-20 23:47:02,646 DEBUG Train in V2_epoch style
+2024-10-20 23:47:02,668 DEBUG log--[108/240][0/391][client-0] train loss: 1.0517 cross-entropy loss: 0.1935
+2024-10-20 23:47:09,753 DEBUG log--[108/240][390/391][client-0] train loss: 1.0185 cross-entropy loss: 0.2477
+2024-10-20 23:47:10,070 DEBUG Epoch 0	Test (client-0):	Loss 0.4274 (0.4274)	Prec@1 86.719 (86.719)
+2024-10-20 23:47:10,182 DEBUG Epoch 50	Test (client-0):	Loss 0.5258 (0.4463)	Prec@1 84.375 (86.719)
+2024-10-20 23:47:10,300 DEBUG  * Prec@1 86.560
+2024-10-20 23:47:12,248 DEBUG Train in V2_epoch style
+2024-10-20 23:47:12,270 DEBUG log--[109/240][0/391][client-0] train loss: 0.9805 cross-entropy loss: 0.1663
+2024-10-20 23:47:18,910 DEBUG log--[109/240][390/391][client-0] train loss: 0.9729 cross-entropy loss: 0.2473
+2024-10-20 23:47:19,226 DEBUG Epoch 0	Test (client-0):	Loss 0.3538 (0.3538)	Prec@1 85.938 (85.938)
+2024-10-20 23:47:19,336 DEBUG Epoch 50	Test (client-0):	Loss 0.4844 (0.4269)	Prec@1 85.938 (86.887)
+2024-10-20 23:47:19,453 DEBUG  * Prec@1 87.060
+2024-10-20 23:47:20,962 DEBUG Train in V2_epoch style
+2024-10-20 23:47:20,984 DEBUG log--[110/240][0/391][client-0] train loss: 0.9930 cross-entropy loss: 0.2346
+2024-10-20 23:47:27,705 DEBUG log--[110/240][390/391][client-0] train loss: 0.9902 cross-entropy loss: 0.2449
+2024-10-20 23:47:28,019 DEBUG Epoch 0	Test (client-0):	Loss 0.3817 (0.3817)	Prec@1 89.844 (89.844)
+2024-10-20 23:47:28,130 DEBUG Epoch 50	Test (client-0):	Loss 0.5243 (0.4608)	Prec@1 85.938 (86.075)
+2024-10-20 23:47:28,251 DEBUG  * Prec@1 86.130
+2024-10-20 23:47:29,764 DEBUG Train in V2_epoch style
+2024-10-20 23:47:29,786 DEBUG log--[111/240][0/391][client-0] train loss: 1.0187 cross-entropy loss: 0.2217
+2024-10-20 23:47:36,415 DEBUG log--[111/240][390/391][client-0] train loss: 0.9745 cross-entropy loss: 0.2397
+2024-10-20 23:47:36,736 DEBUG Epoch 0	Test (client-0):	Loss 0.4189 (0.4189)	Prec@1 85.938 (85.938)
+2024-10-20 23:47:36,843 DEBUG Epoch 50	Test (client-0):	Loss 0.6396 (0.4399)	Prec@1 85.156 (86.366)
+2024-10-20 23:47:37,001 DEBUG  * Prec@1 86.360
+2024-10-20 23:47:38,488 DEBUG the mean of mutal infor is:(-5.121), the est mean of mutal infor is:(-4.004)
+2024-10-20 23:47:38,593 DEBUG Train in V2_epoch style
+2024-10-20 23:47:38,620 DEBUG log--[112/240][0/391][client-0] train loss: 1.0434 cross-entropy loss: 0.2856
+2024-10-20 23:47:45,756 DEBUG log--[112/240][390/391][client-0] train loss: 0.9782 cross-entropy loss: 0.2432
+2024-10-20 23:47:46,068 DEBUG Epoch 0	Test (client-0):	Loss 0.3637 (0.3637)	Prec@1 89.844 (89.844)
+2024-10-20 23:47:46,176 DEBUG Epoch 50	Test (client-0):	Loss 0.5040 (0.4093)	Prec@1 84.375 (87.714)
+2024-10-20 23:47:46,292 DEBUG  * Prec@1 87.620
+2024-10-20 23:47:47,919 DEBUG Train in V2_epoch style
+2024-10-20 23:47:47,944 DEBUG log--[113/240][0/391][client-0] train loss: 0.9438 cross-entropy loss: 0.1734
+2024-10-20 23:47:54,945 DEBUG log--[113/240][390/391][client-0] train loss: 0.9642 cross-entropy loss: 0.2389
+2024-10-20 23:47:55,266 DEBUG Epoch 0	Test (client-0):	Loss 0.3563 (0.3563)	Prec@1 87.500 (87.500)
+2024-10-20 23:47:55,374 DEBUG Epoch 50	Test (client-0):	Loss 0.4980 (0.4770)	Prec@1 89.062 (85.386)
+2024-10-20 23:47:55,494 DEBUG  * Prec@1 85.540
+2024-10-20 23:47:57,007 DEBUG Train in V2_epoch style
+2024-10-20 23:47:57,032 DEBUG log--[114/240][0/391][client-0] train loss: 1.0124 cross-entropy loss: 0.1890
+2024-10-20 23:48:03,970 DEBUG log--[114/240][390/391][client-0] train loss: 0.9896 cross-entropy loss: 0.2415
+2024-10-20 23:48:04,284 DEBUG Epoch 0	Test (client-0):	Loss 0.3193 (0.3193)	Prec@1 90.625 (90.625)
+2024-10-20 23:48:04,395 DEBUG Epoch 50	Test (client-0):	Loss 0.5723 (0.4400)	Prec@1 85.938 (86.933)
+2024-10-20 23:48:04,514 DEBUG  * Prec@1 86.730
+2024-10-20 23:48:06,009 DEBUG Train in V2_epoch style
+2024-10-20 23:48:06,032 DEBUG log--[115/240][0/391][client-0] train loss: 0.8387 cross-entropy loss: 0.2421
+2024-10-20 23:48:12,691 DEBUG log--[115/240][390/391][client-0] train loss: 0.9825 cross-entropy loss: 0.2448
+2024-10-20 23:48:13,015 DEBUG Epoch 0	Test (client-0):	Loss 0.4290 (0.4290)	Prec@1 88.281 (88.281)
+2024-10-20 23:48:13,122 DEBUG Epoch 50	Test (client-0):	Loss 0.5518 (0.4264)	Prec@1 85.938 (86.749)
+2024-10-20 23:48:13,239 DEBUG  * Prec@1 86.680
+2024-10-20 23:48:14,773 DEBUG Train in V2_epoch style
+2024-10-20 23:48:14,799 DEBUG log--[116/240][0/391][client-0] train loss: 0.9808 cross-entropy loss: 0.1955
+2024-10-20 23:48:21,709 DEBUG log--[116/240][390/391][client-0] train loss: 0.9895 cross-entropy loss: 0.2430
+2024-10-20 23:48:22,020 DEBUG Epoch 0	Test (client-0):	Loss 0.3707 (0.3707)	Prec@1 89.062 (89.062)
+2024-10-20 23:48:22,133 DEBUG Epoch 50	Test (client-0):	Loss 0.5324 (0.4395)	Prec@1 85.938 (86.520)
+2024-10-20 23:48:22,251 DEBUG  * Prec@1 86.700
+2024-10-20 23:48:23,748 DEBUG Train in V2_epoch style
+2024-10-20 23:48:23,769 DEBUG log--[117/240][0/391][client-0] train loss: 0.9669 cross-entropy loss: 0.1813
+2024-10-20 23:48:30,601 DEBUG log--[117/240][390/391][client-0] train loss: 1.0252 cross-entropy loss: 0.2331
+2024-10-20 23:48:30,923 DEBUG Epoch 0	Test (client-0):	Loss 0.3444 (0.3444)	Prec@1 89.062 (89.062)
+2024-10-20 23:48:31,034 DEBUG Epoch 50	Test (client-0):	Loss 0.7035 (0.4403)	Prec@1 78.906 (86.351)
+2024-10-20 23:48:31,152 DEBUG  * Prec@1 86.450
+2024-10-20 23:48:32,661 DEBUG Train in V2_epoch style
+2024-10-20 23:48:32,684 DEBUG log--[118/240][0/391][client-0] train loss: 0.9935 cross-entropy loss: 0.2097
+2024-10-20 23:48:39,515 DEBUG log--[118/240][390/391][client-0] train loss: 1.0240 cross-entropy loss: 0.2370
+2024-10-20 23:48:39,833 DEBUG Epoch 0	Test (client-0):	Loss 0.4205 (0.4205)	Prec@1 85.938 (85.938)
+2024-10-20 23:48:39,942 DEBUG Epoch 50	Test (client-0):	Loss 0.3846 (0.4603)	Prec@1 87.500 (85.922)
+2024-10-20 23:48:40,064 DEBUG  * Prec@1 86.050
+2024-10-20 23:48:41,540 DEBUG Train in V2_epoch style
+2024-10-20 23:48:41,561 DEBUG log--[119/240][0/391][client-0] train loss: 0.9664 cross-entropy loss: 0.1457
+2024-10-20 23:48:48,475 DEBUG log--[119/240][390/391][client-0] train loss: 1.0105 cross-entropy loss: 0.2374
+2024-10-20 23:48:48,791 DEBUG Epoch 0	Test (client-0):	Loss 0.4670 (0.4670)	Prec@1 85.156 (85.156)
+2024-10-20 23:48:48,899 DEBUG Epoch 50	Test (client-0):	Loss 0.4913 (0.4953)	Prec@1 84.375 (85.509)
+2024-10-20 23:48:49,054 DEBUG  * Prec@1 85.560
+2024-10-20 23:48:50,585 DEBUG Train in V2_epoch style
+2024-10-20 23:48:50,606 DEBUG log--[120/240][0/391][client-0] train loss: 1.0698 cross-entropy loss: 0.3272
+2024-10-20 23:48:57,459 DEBUG log--[120/240][390/391][client-0] train loss: 1.0155 cross-entropy loss: 0.1575
+2024-10-20 23:48:57,782 DEBUG Epoch 0	Test (client-0):	Loss 0.2499 (0.2499)	Prec@1 92.188 (92.188)
+2024-10-20 23:48:57,891 DEBUG Epoch 50	Test (client-0):	Loss 0.4239 (0.3753)	Prec@1 89.062 (88.649)
+2024-10-20 23:48:58,008 DEBUG  * Prec@1 88.930
+2024-10-20 23:48:59,566 DEBUG Train in V2_epoch style
+2024-10-20 23:48:59,588 DEBUG log--[121/240][0/391][client-0] train loss: 0.7738 cross-entropy loss: 0.1147
+2024-10-20 23:49:06,510 DEBUG log--[121/240][390/391][client-0] train loss: 0.7860 cross-entropy loss: 0.1312
+2024-10-20 23:49:06,834 DEBUG Epoch 0	Test (client-0):	Loss 0.2664 (0.2664)	Prec@1 92.969 (92.969)
+2024-10-20 23:49:06,947 DEBUG Epoch 50	Test (client-0):	Loss 0.4599 (0.3711)	Prec@1 88.281 (89.308)
+2024-10-20 23:49:07,065 DEBUG  * Prec@1 89.480
+2024-10-20 23:49:08,581 DEBUG the mean of mutal infor is:(-5.547), the est mean of mutal infor is:(-4.592)
+2024-10-20 23:49:11,163 DEBUG Train in V2_epoch style
+2024-10-20 23:49:11,184 DEBUG log--[122/240][0/391][client-0] train loss: 0.6379 cross-entropy loss: 0.1425
+2024-10-20 23:49:18,202 DEBUG log--[122/240][390/391][client-0] train loss: 0.6443 cross-entropy loss: 0.1263
+2024-10-20 23:49:18,538 DEBUG Epoch 0	Test (client-0):	Loss 0.2165 (0.2165)	Prec@1 92.188 (92.188)
+2024-10-20 23:49:18,648 DEBUG Epoch 50	Test (client-0):	Loss 0.3532 (0.3754)	Prec@1 89.844 (89.124)
+2024-10-20 23:49:18,768 DEBUG  * Prec@1 89.190
+2024-10-20 23:49:20,256 DEBUG Train in V2_epoch style
+2024-10-20 23:49:20,278 DEBUG log--[123/240][0/391][client-0] train loss: 0.5670 cross-entropy loss: 0.1564
+2024-10-20 23:49:27,208 DEBUG log--[123/240][390/391][client-0] train loss: 0.5667 cross-entropy loss: 0.1232
+2024-10-20 23:49:27,527 DEBUG Epoch 0	Test (client-0):	Loss 0.2636 (0.2636)	Prec@1 94.531 (94.531)
+2024-10-20 23:49:27,637 DEBUG Epoch 50	Test (client-0):	Loss 0.4493 (0.3780)	Prec@1 90.625 (89.017)
+2024-10-20 23:49:27,755 DEBUG  * Prec@1 89.080
+2024-10-20 23:49:29,240 DEBUG Train in V2_epoch style
+2024-10-20 23:49:29,263 DEBUG log--[124/240][0/391][client-0] train loss: 0.5097 cross-entropy loss: 0.1896
+2024-10-20 23:49:36,177 DEBUG log--[124/240][390/391][client-0] train loss: 0.5268 cross-entropy loss: 0.1223
+2024-10-20 23:49:36,505 DEBUG Epoch 0	Test (client-0):	Loss 0.2851 (0.2851)	Prec@1 92.969 (92.969)
+2024-10-20 23:49:36,613 DEBUG Epoch 50	Test (client-0):	Loss 0.4904 (0.3794)	Prec@1 87.500 (89.108)
+2024-10-20 23:49:36,733 DEBUG  * Prec@1 89.190
+2024-10-20 23:49:38,260 DEBUG Train in V2_epoch style
+2024-10-20 23:49:38,282 DEBUG log--[125/240][0/391][client-0] train loss: 0.5047 cross-entropy loss: 0.1634
+2024-10-20 23:49:45,135 DEBUG log--[125/240][390/391][client-0] train loss: 0.4932 cross-entropy loss: 0.1203
+2024-10-20 23:49:45,464 DEBUG Epoch 0	Test (client-0):	Loss 0.2630 (0.2630)	Prec@1 91.406 (91.406)
+2024-10-20 23:49:45,575 DEBUG Epoch 50	Test (client-0):	Loss 0.5394 (0.3826)	Prec@1 85.938 (88.940)
+2024-10-20 23:49:45,693 DEBUG  * Prec@1 88.950
+2024-10-20 23:49:47,193 DEBUG Train in V2_epoch style
+2024-10-20 23:49:47,215 DEBUG log--[126/240][0/391][client-0] train loss: 0.4547 cross-entropy loss: 0.0875
+2024-10-20 23:49:54,001 DEBUG log--[126/240][390/391][client-0] train loss: 0.4621 cross-entropy loss: 0.1179
+2024-10-20 23:49:54,332 DEBUG Epoch 0	Test (client-0):	Loss 0.2970 (0.2970)	Prec@1 92.969 (92.969)
+2024-10-20 23:49:54,440 DEBUG Epoch 50	Test (client-0):	Loss 0.5077 (0.4015)	Prec@1 87.500 (88.894)
+2024-10-20 23:49:54,597 DEBUG  * Prec@1 89.020
+2024-10-20 23:49:56,055 DEBUG Train in V2_epoch style
+2024-10-20 23:49:56,078 DEBUG log--[127/240][0/391][client-0] train loss: 0.4772 cross-entropy loss: 0.0730
+2024-10-20 23:50:02,897 DEBUG log--[127/240][390/391][client-0] train loss: 0.4539 cross-entropy loss: 0.1142
+2024-10-20 23:50:03,223 DEBUG Epoch 0	Test (client-0):	Loss 0.2848 (0.2848)	Prec@1 93.750 (93.750)
+2024-10-20 23:50:03,332 DEBUG Epoch 50	Test (client-0):	Loss 0.5910 (0.3890)	Prec@1 85.938 (88.955)
+2024-10-20 23:50:03,451 DEBUG  * Prec@1 89.190
+2024-10-20 23:50:04,941 DEBUG Train in V2_epoch style
+2024-10-20 23:50:04,962 DEBUG log--[128/240][0/391][client-0] train loss: 0.4108 cross-entropy loss: 0.0880
+2024-10-20 23:50:12,073 DEBUG log--[128/240][390/391][client-0] train loss: 0.4461 cross-entropy loss: 0.1095
+2024-10-20 23:50:12,398 DEBUG Epoch 0	Test (client-0):	Loss 0.2803 (0.2803)	Prec@1 90.625 (90.625)
+2024-10-20 23:50:12,518 DEBUG Epoch 50	Test (client-0):	Loss 0.3596 (0.3773)	Prec@1 89.062 (89.445)
+2024-10-20 23:50:12,637 DEBUG  * Prec@1 89.410
+2024-10-20 23:50:14,092 DEBUG Train in V2_epoch style
+2024-10-20 23:50:14,115 DEBUG log--[129/240][0/391][client-0] train loss: 0.4474 cross-entropy loss: 0.1002
+2024-10-20 23:50:21,034 DEBUG log--[129/240][390/391][client-0] train loss: 0.4384 cross-entropy loss: 0.1088
+2024-10-20 23:50:21,363 DEBUG Epoch 0	Test (client-0):	Loss 0.3254 (0.3254)	Prec@1 90.625 (90.625)
+2024-10-20 23:50:21,472 DEBUG Epoch 50	Test (client-0):	Loss 0.4692 (0.3895)	Prec@1 90.625 (89.522)
+2024-10-20 23:50:21,592 DEBUG  * Prec@1 89.620
+2024-10-20 23:50:23,149 DEBUG Train in V2_epoch style
+2024-10-20 23:50:23,171 DEBUG log--[130/240][0/391][client-0] train loss: 0.4176 cross-entropy loss: 0.1143
+2024-10-20 23:50:30,093 DEBUG log--[130/240][390/391][client-0] train loss: 0.4256 cross-entropy loss: 0.1043
+2024-10-20 23:50:30,421 DEBUG Epoch 0	Test (client-0):	Loss 0.2633 (0.2633)	Prec@1 92.969 (92.969)
+2024-10-20 23:50:30,536 DEBUG Epoch 50	Test (client-0):	Loss 0.5090 (0.4069)	Prec@1 85.156 (89.078)
+2024-10-20 23:50:30,656 DEBUG  * Prec@1 89.260
+2024-10-20 23:50:32,185 DEBUG Train in V2_epoch style
+2024-10-20 23:50:32,207 DEBUG log--[131/240][0/391][client-0] train loss: 0.3967 cross-entropy loss: 0.1183
+2024-10-20 23:50:39,117 DEBUG log--[131/240][390/391][client-0] train loss: 0.4172 cross-entropy loss: 0.1039
+2024-10-20 23:50:39,453 DEBUG Epoch 0	Test (client-0):	Loss 0.2877 (0.2877)	Prec@1 90.625 (90.625)
+2024-10-20 23:50:39,563 DEBUG Epoch 50	Test (client-0):	Loss 0.5370 (0.4122)	Prec@1 85.938 (88.771)
+2024-10-20 23:50:39,690 DEBUG  * Prec@1 88.860
+2024-10-20 23:50:41,114 DEBUG the mean of mutal infor is:(-5.910), the est mean of mutal infor is:(-5.104)
+2024-10-20 23:50:41,217 DEBUG Train in V2_epoch style
+2024-10-20 23:50:41,239 DEBUG log--[132/240][0/391][client-0] train loss: 0.4180 cross-entropy loss: 0.0983
+2024-10-20 23:50:48,033 DEBUG log--[132/240][390/391][client-0] train loss: 0.4116 cross-entropy loss: 0.1015
+2024-10-20 23:50:48,359 DEBUG Epoch 0	Test (client-0):	Loss 0.3427 (0.3427)	Prec@1 89.844 (89.844)
+2024-10-20 23:50:48,467 DEBUG Epoch 50	Test (client-0):	Loss 0.5236 (0.3897)	Prec@1 87.500 (89.522)
+2024-10-20 23:50:48,591 DEBUG  * Prec@1 89.400
+2024-10-20 23:50:50,056 DEBUG Train in V2_epoch style
+2024-10-20 23:50:50,077 DEBUG log--[133/240][0/391][client-0] train loss: 0.4070 cross-entropy loss: 0.0827
+2024-10-20 23:50:56,714 DEBUG log--[133/240][390/391][client-0] train loss: 0.4100 cross-entropy loss: 0.1006
+2024-10-20 23:50:57,036 DEBUG Epoch 0	Test (client-0):	Loss 0.3774 (0.3774)	Prec@1 89.062 (89.062)
+2024-10-20 23:50:57,149 DEBUG Epoch 50	Test (client-0):	Loss 0.4398 (0.4404)	Prec@1 85.938 (88.297)
+2024-10-20 23:50:57,269 DEBUG  * Prec@1 88.550
+2024-10-20 23:50:58,762 DEBUG Train in V2_epoch style
+2024-10-20 23:50:58,783 DEBUG log--[134/240][0/391][client-0] train loss: 0.4209 cross-entropy loss: 0.0493
+2024-10-20 23:51:05,562 DEBUG log--[134/240][390/391][client-0] train loss: 0.4100 cross-entropy loss: 0.0998
+2024-10-20 23:51:05,896 DEBUG Epoch 0	Test (client-0):	Loss 0.3749 (0.3749)	Prec@1 90.625 (90.625)
+2024-10-20 23:51:06,008 DEBUG Epoch 50	Test (client-0):	Loss 0.5337 (0.4622)	Prec@1 89.844 (87.898)
+2024-10-20 23:51:06,131 DEBUG  * Prec@1 88.000
+2024-10-20 23:51:07,706 DEBUG Train in V2_epoch style
+2024-10-20 23:51:07,727 DEBUG log--[135/240][0/391][client-0] train loss: 0.3897 cross-entropy loss: 0.0583
+2024-10-20 23:51:14,597 DEBUG log--[135/240][390/391][client-0] train loss: 0.4085 cross-entropy loss: 0.0984
+2024-10-20 23:51:14,928 DEBUG Epoch 0	Test (client-0):	Loss 0.3688 (0.3688)	Prec@1 89.844 (89.844)
+2024-10-20 23:51:15,042 DEBUG Epoch 50	Test (client-0):	Loss 0.6819 (0.4536)	Prec@1 82.812 (87.960)
+2024-10-20 23:51:15,165 DEBUG  * Prec@1 88.160
+2024-10-20 23:51:16,718 DEBUG Train in V2_epoch style
+2024-10-20 23:51:16,741 DEBUG log--[136/240][0/391][client-0] train loss: 0.4191 cross-entropy loss: 0.0681
+2024-10-20 23:51:23,709 DEBUG log--[136/240][390/391][client-0] train loss: 0.3995 cross-entropy loss: 0.0964
+2024-10-20 23:51:24,039 DEBUG Epoch 0	Test (client-0):	Loss 0.2815 (0.2815)	Prec@1 92.969 (92.969)
+2024-10-20 23:51:24,149 DEBUG Epoch 50	Test (client-0):	Loss 0.3478 (0.4021)	Prec@1 92.188 (89.246)
+2024-10-20 23:51:24,277 DEBUG  * Prec@1 89.350
+2024-10-20 23:51:25,832 DEBUG Train in V2_epoch style
+2024-10-20 23:51:25,854 DEBUG log--[137/240][0/391][client-0] train loss: 0.4285 cross-entropy loss: 0.0948
+2024-10-20 23:51:32,859 DEBUG log--[137/240][390/391][client-0] train loss: 0.4114 cross-entropy loss: 0.0944
+2024-10-20 23:51:33,193 DEBUG Epoch 0	Test (client-0):	Loss 0.3033 (0.3033)	Prec@1 93.750 (93.750)
+2024-10-20 23:51:33,300 DEBUG Epoch 50	Test (client-0):	Loss 0.4825 (0.4349)	Prec@1 89.844 (88.756)
+2024-10-20 23:51:33,421 DEBUG  * Prec@1 88.910
+2024-10-20 23:51:34,943 DEBUG Train in V2_epoch style
+2024-10-20 23:51:34,967 DEBUG log--[138/240][0/391][client-0] train loss: 0.3844 cross-entropy loss: 0.0310
+2024-10-20 23:51:42,061 DEBUG log--[138/240][390/391][client-0] train loss: 0.3995 cross-entropy loss: 0.0916
+2024-10-20 23:51:42,398 DEBUG Epoch 0	Test (client-0):	Loss 0.3163 (0.3163)	Prec@1 91.406 (91.406)
+2024-10-20 23:51:42,509 DEBUG Epoch 50	Test (client-0):	Loss 0.5005 (0.4263)	Prec@1 88.281 (88.496)
+2024-10-20 23:51:42,632 DEBUG  * Prec@1 88.500
+2024-10-20 23:51:44,213 DEBUG Train in V2_epoch style
+2024-10-20 23:51:44,234 DEBUG log--[139/240][0/391][client-0] train loss: 0.3905 cross-entropy loss: 0.1161
+2024-10-20 23:51:52,224 DEBUG log--[139/240][390/391][client-0] train loss: 0.3995 cross-entropy loss: 0.0947
+2024-10-20 23:51:52,567 DEBUG Epoch 0	Test (client-0):	Loss 0.2403 (0.2403)	Prec@1 94.531 (94.531)
+2024-10-20 23:51:52,674 DEBUG Epoch 50	Test (client-0):	Loss 0.4296 (0.4020)	Prec@1 86.719 (89.308)
+2024-10-20 23:51:52,799 DEBUG  * Prec@1 89.440
+2024-10-20 23:51:54,311 DEBUG Train in V2_epoch style
+2024-10-20 23:51:54,334 DEBUG log--[140/240][0/391][client-0] train loss: 0.4152 cross-entropy loss: 0.1817
+2024-10-20 23:52:01,009 DEBUG log--[140/240][390/391][client-0] train loss: 0.3958 cross-entropy loss: 0.0931
+2024-10-20 23:52:01,342 DEBUG Epoch 0	Test (client-0):	Loss 0.3807 (0.3807)	Prec@1 91.406 (91.406)
+2024-10-20 23:52:01,453 DEBUG Epoch 50	Test (client-0):	Loss 0.5708 (0.4178)	Prec@1 88.281 (89.108)
+2024-10-20 23:52:01,575 DEBUG  * Prec@1 89.420
+2024-10-20 23:52:03,084 DEBUG Train in V2_epoch style
+2024-10-20 23:52:03,109 DEBUG log--[141/240][0/391][client-0] train loss: 0.4103 cross-entropy loss: 0.1882
+2024-10-20 23:52:10,067 DEBUG log--[141/240][390/391][client-0] train loss: 0.3930 cross-entropy loss: 0.0920
+2024-10-20 23:52:10,398 DEBUG Epoch 0	Test (client-0):	Loss 0.3535 (0.3535)	Prec@1 92.969 (92.969)
+2024-10-20 23:52:10,506 DEBUG Epoch 50	Test (client-0):	Loss 0.4963 (0.4404)	Prec@1 87.500 (89.001)
+2024-10-20 23:52:10,627 DEBUG  * Prec@1 88.960
+2024-10-20 23:52:12,121 DEBUG the mean of mutal infor is:(-5.957), the est mean of mutal infor is:(-5.173)
+2024-10-20 23:52:12,230 DEBUG Train in V2_epoch style
+2024-10-20 23:52:12,255 DEBUG log--[142/240][0/391][client-0] train loss: 0.3886 cross-entropy loss: 0.0185
+2024-10-20 23:52:19,341 DEBUG log--[142/240][390/391][client-0] train loss: 0.3905 cross-entropy loss: 0.0873
+2024-10-20 23:52:19,670 DEBUG Epoch 0	Test (client-0):	Loss 0.3626 (0.3626)	Prec@1 90.625 (90.625)
+2024-10-20 23:52:19,780 DEBUG Epoch 50	Test (client-0):	Loss 0.4245 (0.4104)	Prec@1 90.625 (89.170)
+2024-10-20 23:52:19,902 DEBUG  * Prec@1 88.950
+2024-10-20 23:52:21,468 DEBUG Train in V2_epoch style
+2024-10-20 23:52:21,493 DEBUG log--[143/240][0/391][client-0] train loss: 0.3723 cross-entropy loss: 0.0852
+2024-10-20 23:52:28,306 DEBUG log--[143/240][390/391][client-0] train loss: 0.3807 cross-entropy loss: 0.0915
+2024-10-20 23:52:28,636 DEBUG Epoch 0	Test (client-0):	Loss 0.3289 (0.3289)	Prec@1 92.969 (92.969)
+2024-10-20 23:52:28,745 DEBUG Epoch 50	Test (client-0):	Loss 0.3598 (0.4145)	Prec@1 92.188 (89.108)
+2024-10-20 23:52:28,869 DEBUG  * Prec@1 89.290
+2024-10-20 23:52:30,370 DEBUG Train in V2_epoch style
+2024-10-20 23:52:30,394 DEBUG log--[144/240][0/391][client-0] train loss: 0.3746 cross-entropy loss: 0.1092
+2024-10-20 23:52:37,402 DEBUG log--[144/240][390/391][client-0] train loss: 0.3914 cross-entropy loss: 0.0923
+2024-10-20 23:52:37,736 DEBUG Epoch 0	Test (client-0):	Loss 0.4077 (0.4077)	Prec@1 90.625 (90.625)
+2024-10-20 23:52:37,846 DEBUG Epoch 50	Test (client-0):	Loss 0.4746 (0.4341)	Prec@1 89.062 (88.771)
+2024-10-20 23:52:37,968 DEBUG  * Prec@1 89.070
+2024-10-20 23:52:39,556 DEBUG Train in V2_epoch style
+2024-10-20 23:52:39,578 DEBUG log--[145/240][0/391][client-0] train loss: 0.3898 cross-entropy loss: 0.1849
+2024-10-20 23:52:46,440 DEBUG log--[145/240][390/391][client-0] train loss: 0.3834 cross-entropy loss: 0.0885
+2024-10-20 23:52:46,784 DEBUG Epoch 0	Test (client-0):	Loss 0.3248 (0.3248)	Prec@1 92.188 (92.188)
+2024-10-20 23:52:46,894 DEBUG Epoch 50	Test (client-0):	Loss 0.4118 (0.4330)	Prec@1 89.844 (88.971)
+2024-10-20 23:52:47,052 DEBUG  * Prec@1 89.180
+2024-10-20 23:52:48,539 DEBUG Train in V2_epoch style
+2024-10-20 23:52:48,561 DEBUG log--[146/240][0/391][client-0] train loss: 0.3691 cross-entropy loss: 0.0844
+2024-10-20 23:52:55,589 DEBUG log--[146/240][390/391][client-0] train loss: 0.3778 cross-entropy loss: 0.0906
+2024-10-20 23:52:55,932 DEBUG Epoch 0	Test (client-0):	Loss 0.3856 (0.3856)	Prec@1 89.844 (89.844)
+2024-10-20 23:52:56,044 DEBUG Epoch 50	Test (client-0):	Loss 0.4063 (0.4196)	Prec@1 89.062 (89.200)
+2024-10-20 23:52:56,175 DEBUG  * Prec@1 89.390
+2024-10-20 23:52:57,767 DEBUG Train in V2_epoch style
+2024-10-20 23:52:57,789 DEBUG log--[147/240][0/391][client-0] train loss: 0.3879 cross-entropy loss: 0.1089
+2024-10-20 23:53:04,797 DEBUG log--[147/240][390/391][client-0] train loss: 0.3787 cross-entropy loss: 0.0849
+2024-10-20 23:53:05,136 DEBUG Epoch 0	Test (client-0):	Loss 0.4106 (0.4106)	Prec@1 88.281 (88.281)
+2024-10-20 23:53:05,246 DEBUG Epoch 50	Test (client-0):	Loss 0.3859 (0.4273)	Prec@1 89.062 (88.618)
+2024-10-20 23:53:05,370 DEBUG  * Prec@1 88.540
+2024-10-20 23:53:06,866 DEBUG Train in V2_epoch style
+2024-10-20 23:53:06,887 DEBUG log--[148/240][0/391][client-0] train loss: 0.3939 cross-entropy loss: 0.0655
+2024-10-20 23:53:13,808 DEBUG log--[148/240][390/391][client-0] train loss: 0.3663 cross-entropy loss: 0.0895
+2024-10-20 23:53:14,149 DEBUG Epoch 0	Test (client-0):	Loss 0.2991 (0.2991)	Prec@1 92.969 (92.969)
+2024-10-20 23:53:14,260 DEBUG Epoch 50	Test (client-0):	Loss 0.4319 (0.4220)	Prec@1 89.844 (89.001)
+2024-10-20 23:53:14,384 DEBUG  * Prec@1 89.110
+2024-10-20 23:53:15,933 DEBUG Train in V2_epoch style
+2024-10-20 23:53:15,954 DEBUG log--[149/240][0/391][client-0] train loss: 0.3838 cross-entropy loss: 0.0466
+2024-10-20 23:53:22,822 DEBUG log--[149/240][390/391][client-0] train loss: 0.3672 cross-entropy loss: 0.0866
+2024-10-20 23:53:23,159 DEBUG Epoch 0	Test (client-0):	Loss 0.3358 (0.3358)	Prec@1 91.406 (91.406)
+2024-10-20 23:53:23,269 DEBUG Epoch 50	Test (client-0):	Loss 0.4996 (0.4345)	Prec@1 88.281 (88.327)
+2024-10-20 23:53:23,392 DEBUG  * Prec@1 88.520
+2024-10-20 23:53:24,894 DEBUG Train in V2_epoch style
+2024-10-20 23:53:24,919 DEBUG log--[150/240][0/391][client-0] train loss: 0.3692 cross-entropy loss: 0.0560
+2024-10-20 23:53:31,895 DEBUG log--[150/240][390/391][client-0] train loss: 0.3746 cross-entropy loss: 0.0851
+2024-10-20 23:53:32,228 DEBUG Epoch 0	Test (client-0):	Loss 0.3425 (0.3425)	Prec@1 89.844 (89.844)
+2024-10-20 23:53:32,336 DEBUG Epoch 50	Test (client-0):	Loss 0.4821 (0.4176)	Prec@1 86.719 (89.093)
+2024-10-20 23:53:32,492 DEBUG  * Prec@1 89.400
+2024-10-20 23:53:34,083 DEBUG Train in V2_epoch style
+2024-10-20 23:53:34,104 DEBUG log--[151/240][0/391][client-0] train loss: 0.3742 cross-entropy loss: 0.0660
+2024-10-20 23:53:41,010 DEBUG log--[151/240][390/391][client-0] train loss: 0.3687 cross-entropy loss: 0.0850
+2024-10-20 23:53:41,352 DEBUG Epoch 0	Test (client-0):	Loss 0.2898 (0.2898)	Prec@1 92.969 (92.969)
+2024-10-20 23:53:41,466 DEBUG Epoch 50	Test (client-0):	Loss 0.5439 (0.4168)	Prec@1 86.719 (89.001)
+2024-10-20 23:53:41,616 DEBUG  * Prec@1 89.190
+2024-10-20 23:53:43,040 DEBUG the mean of mutal infor is:(-6.018), the est mean of mutal infor is:(-5.266)
+2024-10-20 23:53:43,146 DEBUG Train in V2_epoch style
+2024-10-20 23:53:43,167 DEBUG log--[152/240][0/391][client-0] train loss: 0.3385 cross-entropy loss: 0.0673
+2024-10-20 23:53:49,869 DEBUG log--[152/240][390/391][client-0] train loss: 0.3536 cross-entropy loss: 0.0867
+2024-10-20 23:53:50,210 DEBUG Epoch 0	Test (client-0):	Loss 0.3256 (0.3256)	Prec@1 92.188 (92.188)
+2024-10-20 23:53:50,319 DEBUG Epoch 50	Test (client-0):	Loss 0.5335 (0.4375)	Prec@1 85.156 (89.093)
+2024-10-20 23:53:50,451 DEBUG  * Prec@1 88.950
+2024-10-20 23:53:51,975 DEBUG Train in V2_epoch style
+2024-10-20 23:53:51,998 DEBUG log--[153/240][0/391][client-0] train loss: 0.3920 cross-entropy loss: 0.1055
+2024-10-20 23:53:58,919 DEBUG log--[153/240][390/391][client-0] train loss: 0.3618 cross-entropy loss: 0.0838
+2024-10-20 23:53:59,263 DEBUG Epoch 0	Test (client-0):	Loss 0.3470 (0.3470)	Prec@1 89.844 (89.844)
+2024-10-20 23:53:59,372 DEBUG Epoch 50	Test (client-0):	Loss 0.3904 (0.4427)	Prec@1 91.406 (88.480)
+2024-10-20 23:53:59,494 DEBUG  * Prec@1 88.650
+2024-10-20 23:54:00,985 DEBUG Train in V2_epoch style
+2024-10-20 23:54:01,007 DEBUG log--[154/240][0/391][client-0] train loss: 0.3616 cross-entropy loss: 0.1841
+2024-10-20 23:54:07,838 DEBUG log--[154/240][390/391][client-0] train loss: 0.3532 cross-entropy loss: 0.0890
+2024-10-20 23:54:08,181 DEBUG Epoch 0	Test (client-0):	Loss 0.3578 (0.3578)	Prec@1 90.625 (90.625)
+2024-10-20 23:54:08,290 DEBUG Epoch 50	Test (client-0):	Loss 0.4770 (0.4178)	Prec@1 86.719 (89.047)
+2024-10-20 23:54:08,448 DEBUG  * Prec@1 89.060
+2024-10-20 23:54:09,950 DEBUG Train in V2_epoch style
+2024-10-20 23:54:09,973 DEBUG log--[155/240][0/391][client-0] train loss: 0.3662 cross-entropy loss: 0.0480
+2024-10-20 23:54:16,670 DEBUG log--[155/240][390/391][client-0] train loss: 0.3492 cross-entropy loss: 0.0855
+2024-10-20 23:54:17,017 DEBUG Epoch 0	Test (client-0):	Loss 0.3423 (0.3423)	Prec@1 90.625 (90.625)
+2024-10-20 23:54:17,128 DEBUG Epoch 50	Test (client-0):	Loss 0.3721 (0.4296)	Prec@1 89.844 (88.741)
+2024-10-20 23:54:17,289 DEBUG  * Prec@1 89.300
+2024-10-20 23:54:18,830 DEBUG Train in V2_epoch style
+2024-10-20 23:54:18,852 DEBUG log--[156/240][0/391][client-0] train loss: 0.3611 cross-entropy loss: 0.0304
+2024-10-20 23:54:25,643 DEBUG log--[156/240][390/391][client-0] train loss: 0.3587 cross-entropy loss: 0.0823
+2024-10-20 23:54:25,999 DEBUG Epoch 0	Test (client-0):	Loss 0.5219 (0.5219)	Prec@1 86.719 (86.719)
+2024-10-20 23:54:26,117 DEBUG Epoch 50	Test (client-0):	Loss 0.4586 (0.4391)	Prec@1 88.281 (88.817)
+2024-10-20 23:54:26,275 DEBUG  * Prec@1 88.880
+2024-10-20 23:54:27,800 DEBUG Train in V2_epoch style
+2024-10-20 23:54:27,823 DEBUG log--[157/240][0/391][client-0] train loss: 0.3745 cross-entropy loss: 0.0654
+2024-10-20 23:54:34,583 DEBUG log--[157/240][390/391][client-0] train loss: 0.3689 cross-entropy loss: 0.0836
+2024-10-20 23:54:34,935 DEBUG Epoch 0	Test (client-0):	Loss 0.2658 (0.2658)	Prec@1 92.969 (92.969)
+2024-10-20 23:54:35,046 DEBUG Epoch 50	Test (client-0):	Loss 0.4437 (0.4207)	Prec@1 88.281 (88.848)
+2024-10-20 23:54:35,171 DEBUG  * Prec@1 88.860
+2024-10-20 23:54:36,685 DEBUG Train in V2_epoch style
+2024-10-20 23:54:36,707 DEBUG log--[158/240][0/391][client-0] train loss: 0.3638 cross-entropy loss: 0.0524
+2024-10-20 23:54:43,933 DEBUG log--[158/240][390/391][client-0] train loss: 0.3625 cross-entropy loss: 0.0824
+2024-10-20 23:54:44,280 DEBUG Epoch 0	Test (client-0):	Loss 0.3470 (0.3470)	Prec@1 92.188 (92.188)
+2024-10-20 23:54:44,389 DEBUG Epoch 50	Test (client-0):	Loss 0.5637 (0.4423)	Prec@1 88.281 (88.603)
+2024-10-20 23:54:44,515 DEBUG  * Prec@1 88.780
+2024-10-20 23:54:46,029 DEBUG Train in V2_epoch style
+2024-10-20 23:54:46,053 DEBUG log--[159/240][0/391][client-0] train loss: 0.3788 cross-entropy loss: 0.0692
+2024-10-20 23:54:52,873 DEBUG log--[159/240][390/391][client-0] train loss: 0.3685 cross-entropy loss: 0.0809
+2024-10-20 23:54:53,220 DEBUG Epoch 0	Test (client-0):	Loss 0.3647 (0.3647)	Prec@1 90.625 (90.625)
+2024-10-20 23:54:53,331 DEBUG Epoch 50	Test (client-0):	Loss 0.4218 (0.4269)	Prec@1 89.062 (88.848)
+2024-10-20 23:54:53,490 DEBUG  * Prec@1 89.050
+2024-10-20 23:54:55,022 DEBUG Train in V2_epoch style
+2024-10-20 23:54:55,045 DEBUG log--[160/240][0/391][client-0] train loss: 0.3906 cross-entropy loss: 0.0392
+2024-10-20 23:55:02,032 DEBUG log--[160/240][390/391][client-0] train loss: 0.3661 cross-entropy loss: 0.0836
+2024-10-20 23:55:02,372 DEBUG Epoch 0	Test (client-0):	Loss 0.2282 (0.2282)	Prec@1 93.750 (93.750)
+2024-10-20 23:55:02,481 DEBUG Epoch 50	Test (client-0):	Loss 0.4981 (0.4140)	Prec@1 88.281 (89.400)
+2024-10-20 23:55:02,609 DEBUG  * Prec@1 89.490
+2024-10-20 23:55:04,161 DEBUG Train in V2_epoch style
+2024-10-20 23:55:04,184 DEBUG log--[161/240][0/391][client-0] train loss: 0.3855 cross-entropy loss: 0.0750
+2024-10-20 23:55:11,104 DEBUG log--[161/240][390/391][client-0] train loss: 0.3686 cross-entropy loss: 0.0812
+2024-10-20 23:55:11,447 DEBUG Epoch 0	Test (client-0):	Loss 0.4821 (0.4821)	Prec@1 89.062 (89.062)
+2024-10-20 23:55:11,558 DEBUG Epoch 50	Test (client-0):	Loss 0.4190 (0.4831)	Prec@1 89.062 (87.454)
+2024-10-20 23:55:11,681 DEBUG  * Prec@1 88.040
+2024-10-20 23:55:13,176 DEBUG the mean of mutal infor is:(-6.005), the est mean of mutal infor is:(-5.233)
+2024-10-20 23:55:15,820 DEBUG Train in V2_epoch style
+2024-10-20 23:55:15,844 DEBUG log--[162/240][0/391][client-0] train loss: 0.3601 cross-entropy loss: 0.0216
+2024-10-20 23:55:22,787 DEBUG log--[162/240][390/391][client-0] train loss: 0.3653 cross-entropy loss: 0.0820
+2024-10-20 23:55:23,133 DEBUG Epoch 0	Test (client-0):	Loss 0.4140 (0.4140)	Prec@1 90.625 (90.625)
+2024-10-20 23:55:23,246 DEBUG Epoch 50	Test (client-0):	Loss 0.4817 (0.4303)	Prec@1 89.062 (89.170)
+2024-10-20 23:55:23,370 DEBUG  * Prec@1 89.370
+2024-10-20 23:55:24,884 DEBUG Train in V2_epoch style
+2024-10-20 23:55:24,906 DEBUG log--[163/240][0/391][client-0] train loss: 0.3529 cross-entropy loss: 0.0761
+2024-10-20 23:55:31,816 DEBUG log--[163/240][390/391][client-0] train loss: 0.3627 cross-entropy loss: 0.0872
+2024-10-20 23:55:32,170 DEBUG Epoch 0	Test (client-0):	Loss 0.3644 (0.3644)	Prec@1 90.625 (90.625)
+2024-10-20 23:55:32,285 DEBUG Epoch 50	Test (client-0):	Loss 0.4396 (0.4478)	Prec@1 89.844 (88.266)
+2024-10-20 23:55:32,410 DEBUG  * Prec@1 88.630
+2024-10-20 23:55:33,949 DEBUG Train in V2_epoch style
+2024-10-20 23:55:33,970 DEBUG log--[164/240][0/391][client-0] train loss: 0.3626 cross-entropy loss: 0.0499
+2024-10-20 23:55:40,681 DEBUG log--[164/240][390/391][client-0] train loss: 0.3586 cross-entropy loss: 0.0801
+2024-10-20 23:55:41,023 DEBUG Epoch 0	Test (client-0):	Loss 0.3980 (0.3980)	Prec@1 89.844 (89.844)
+2024-10-20 23:55:41,136 DEBUG Epoch 50	Test (client-0):	Loss 0.5834 (0.4654)	Prec@1 86.719 (88.143)
+2024-10-20 23:55:41,262 DEBUG  * Prec@1 88.190
+2024-10-20 23:55:42,734 DEBUG Train in V2_epoch style
+2024-10-20 23:55:42,757 DEBUG log--[165/240][0/391][client-0] train loss: 0.3630 cross-entropy loss: 0.1116
+2024-10-20 23:55:49,772 DEBUG log--[165/240][390/391][client-0] train loss: 0.3594 cross-entropy loss: 0.0788
+2024-10-20 23:55:50,124 DEBUG Epoch 0	Test (client-0):	Loss 0.4447 (0.4447)	Prec@1 89.062 (89.062)
+2024-10-20 23:55:50,235 DEBUG Epoch 50	Test (client-0):	Loss 0.4639 (0.4356)	Prec@1 88.281 (88.419)
+2024-10-20 23:55:50,364 DEBUG  * Prec@1 88.550
+2024-10-20 23:55:51,840 DEBUG Train in V2_epoch style
+2024-10-20 23:55:51,867 DEBUG log--[166/240][0/391][client-0] train loss: 0.3436 cross-entropy loss: 0.1290
+2024-10-20 23:55:59,150 DEBUG log--[166/240][390/391][client-0] train loss: 0.3416 cross-entropy loss: 0.0824
+2024-10-20 23:55:59,499 DEBUG Epoch 0	Test (client-0):	Loss 0.4296 (0.4296)	Prec@1 88.281 (88.281)
+2024-10-20 23:55:59,616 DEBUG Epoch 50	Test (client-0):	Loss 0.4543 (0.4321)	Prec@1 85.938 (89.185)
+2024-10-20 23:55:59,744 DEBUG  * Prec@1 89.200
+2024-10-20 23:56:01,296 DEBUG Train in V2_epoch style
+2024-10-20 23:56:01,318 DEBUG log--[167/240][0/391][client-0] train loss: 0.3470 cross-entropy loss: 0.1141
+2024-10-20 23:56:08,588 DEBUG log--[167/240][390/391][client-0] train loss: 0.3661 cross-entropy loss: 0.0789
+2024-10-20 23:56:08,945 DEBUG Epoch 0	Test (client-0):	Loss 0.3464 (0.3464)	Prec@1 91.406 (91.406)
+2024-10-20 23:56:09,055 DEBUG Epoch 50	Test (client-0):	Loss 0.4607 (0.4277)	Prec@1 87.500 (89.124)
+2024-10-20 23:56:09,184 DEBUG  * Prec@1 89.180
+2024-10-20 23:56:10,723 DEBUG Train in V2_epoch style
+2024-10-20 23:56:10,744 DEBUG log--[168/240][0/391][client-0] train loss: 0.3476 cross-entropy loss: 0.0623
+2024-10-20 23:56:18,007 DEBUG log--[168/240][390/391][client-0] train loss: 0.3534 cross-entropy loss: 0.0794
+2024-10-20 23:56:18,368 DEBUG Epoch 0	Test (client-0):	Loss 0.4211 (0.4211)	Prec@1 90.625 (90.625)
+2024-10-20 23:56:18,477 DEBUG Epoch 50	Test (client-0):	Loss 0.5639 (0.4503)	Prec@1 88.281 (88.220)
+2024-10-20 23:56:18,639 DEBUG  * Prec@1 88.470
+2024-10-20 23:56:20,189 DEBUG Train in V2_epoch style
+2024-10-20 23:56:20,210 DEBUG log--[169/240][0/391][client-0] train loss: 0.3208 cross-entropy loss: 0.0871
+2024-10-20 23:56:27,026 DEBUG log--[169/240][390/391][client-0] train loss: 0.3466 cross-entropy loss: 0.0807
+2024-10-20 23:56:27,382 DEBUG Epoch 0	Test (client-0):	Loss 0.4002 (0.4002)	Prec@1 90.625 (90.625)
+2024-10-20 23:56:27,494 DEBUG Epoch 50	Test (client-0):	Loss 0.5063 (0.4342)	Prec@1 89.844 (88.526)
+2024-10-20 23:56:27,656 DEBUG  * Prec@1 88.660
+2024-10-20 23:56:29,201 DEBUG Train in V2_epoch style
+2024-10-20 23:56:29,227 DEBUG log--[170/240][0/391][client-0] train loss: 0.3747 cross-entropy loss: 0.0734
+2024-10-20 23:56:36,521 DEBUG log--[170/240][390/391][client-0] train loss: 0.3501 cross-entropy loss: 0.0788
+2024-10-20 23:56:36,883 DEBUG Epoch 0	Test (client-0):	Loss 0.5193 (0.5193)	Prec@1 88.281 (88.281)
+2024-10-20 23:56:36,997 DEBUG Epoch 50	Test (client-0):	Loss 0.4046 (0.4332)	Prec@1 89.844 (88.557)
+2024-10-20 23:56:37,125 DEBUG  * Prec@1 88.590
+2024-10-20 23:56:38,668 DEBUG Train in V2_epoch style
+2024-10-20 23:56:38,693 DEBUG log--[171/240][0/391][client-0] train loss: 0.3327 cross-entropy loss: 0.0979
+2024-10-20 23:56:45,430 DEBUG log--[171/240][390/391][client-0] train loss: 0.3558 cross-entropy loss: 0.0775
+2024-10-20 23:56:45,781 DEBUG Epoch 0	Test (client-0):	Loss 0.3785 (0.3785)	Prec@1 88.281 (88.281)
+2024-10-20 23:56:45,891 DEBUG Epoch 50	Test (client-0):	Loss 0.3924 (0.4632)	Prec@1 90.625 (88.388)
+2024-10-20 23:56:46,020 DEBUG  * Prec@1 88.640
+2024-10-20 23:56:47,545 DEBUG the mean of mutal infor is:(-6.010), the est mean of mutal infor is:(-5.238)
+2024-10-20 23:56:47,651 DEBUG Train in V2_epoch style
+2024-10-20 23:56:47,672 DEBUG log--[172/240][0/391][client-0] train loss: 0.3533 cross-entropy loss: 0.0906
+2024-10-20 23:56:54,493 DEBUG log--[172/240][390/391][client-0] train loss: 0.3647 cross-entropy loss: 0.0781
+2024-10-20 23:56:54,851 DEBUG Epoch 0	Test (client-0):	Loss 0.4096 (0.4096)	Prec@1 89.062 (89.062)
+2024-10-20 23:56:54,966 DEBUG Epoch 50	Test (client-0):	Loss 0.6426 (0.5129)	Prec@1 86.719 (87.592)
+2024-10-20 23:56:55,096 DEBUG  * Prec@1 87.790
+2024-10-20 23:56:57,261 DEBUG Train in V2_epoch style
+2024-10-20 23:56:57,281 DEBUG log--[173/240][0/391][client-0] train loss: 0.3456 cross-entropy loss: 0.1141
+2024-10-20 23:57:03,982 DEBUG log--[173/240][390/391][client-0] train loss: 0.3477 cross-entropy loss: 0.0806
+2024-10-20 23:57:04,335 DEBUG Epoch 0	Test (client-0):	Loss 0.3468 (0.3468)	Prec@1 89.844 (89.844)
+2024-10-20 23:57:04,441 DEBUG Epoch 50	Test (client-0):	Loss 0.4585 (0.4537)	Prec@1 90.625 (88.404)
+2024-10-20 23:57:04,567 DEBUG  * Prec@1 88.630
+2024-10-20 23:57:06,069 DEBUG Train in V2_epoch style
+2024-10-20 23:57:06,090 DEBUG log--[174/240][0/391][client-0] train loss: 0.3791 cross-entropy loss: 0.0443
+2024-10-20 23:57:13,473 DEBUG log--[174/240][390/391][client-0] train loss: 0.3574 cross-entropy loss: 0.0769
+2024-10-20 23:57:13,832 DEBUG Epoch 0	Test (client-0):	Loss 0.4057 (0.4057)	Prec@1 89.062 (89.062)
+2024-10-20 23:57:13,950 DEBUG Epoch 50	Test (client-0):	Loss 0.4959 (0.4525)	Prec@1 88.281 (88.634)
+2024-10-20 23:57:14,080 DEBUG  * Prec@1 88.750
+2024-10-20 23:57:15,617 DEBUG Train in V2_epoch style
+2024-10-20 23:57:15,638 DEBUG log--[175/240][0/391][client-0] train loss: 0.3160 cross-entropy loss: 0.1407
+2024-10-20 23:57:22,375 DEBUG log--[175/240][390/391][client-0] train loss: 0.3416 cross-entropy loss: 0.0795
+2024-10-20 23:57:22,739 DEBUG Epoch 0	Test (client-0):	Loss 0.3314 (0.3314)	Prec@1 92.188 (92.188)
+2024-10-20 23:57:22,854 DEBUG Epoch 50	Test (client-0):	Loss 0.4649 (0.4593)	Prec@1 86.719 (88.419)
+2024-10-20 23:57:22,983 DEBUG  * Prec@1 88.530
+2024-10-20 23:57:24,506 DEBUG Train in V2_epoch style
+2024-10-20 23:57:24,529 DEBUG log--[176/240][0/391][client-0] train loss: 0.3576 cross-entropy loss: 0.1114
+2024-10-20 23:57:31,486 DEBUG log--[176/240][390/391][client-0] train loss: 0.3576 cross-entropy loss: 0.0808
+2024-10-20 23:57:31,842 DEBUG Epoch 0	Test (client-0):	Loss 0.4996 (0.4996)	Prec@1 88.281 (88.281)
+2024-10-20 23:57:31,949 DEBUG Epoch 50	Test (client-0):	Loss 0.4567 (0.4745)	Prec@1 85.938 (87.960)
+2024-10-20 23:57:32,115 DEBUG  * Prec@1 88.120
+2024-10-20 23:57:33,715 DEBUG Train in V2_epoch style
+2024-10-20 23:57:33,740 DEBUG log--[177/240][0/391][client-0] train loss: 0.3280 cross-entropy loss: 0.1071
+2024-10-20 23:57:41,056 DEBUG log--[177/240][390/391][client-0] train loss: 0.3547 cross-entropy loss: 0.0779
+2024-10-20 23:57:41,416 DEBUG Epoch 0	Test (client-0):	Loss 0.2781 (0.2781)	Prec@1 91.406 (91.406)
+2024-10-20 23:57:41,526 DEBUG Epoch 50	Test (client-0):	Loss 0.4562 (0.4271)	Prec@1 87.500 (89.185)
+2024-10-20 23:57:41,655 DEBUG  * Prec@1 89.280
+2024-10-20 23:57:43,249 DEBUG Train in V2_epoch style
+2024-10-20 23:57:43,274 DEBUG log--[178/240][0/391][client-0] train loss: 0.3437 cross-entropy loss: 0.0969
+2024-10-20 23:57:50,488 DEBUG log--[178/240][390/391][client-0] train loss: 0.3450 cross-entropy loss: 0.0781
+2024-10-20 23:57:50,850 DEBUG Epoch 0	Test (client-0):	Loss 0.4777 (0.4777)	Prec@1 87.500 (87.500)
+2024-10-20 23:57:50,961 DEBUG Epoch 50	Test (client-0):	Loss 0.3905 (0.4804)	Prec@1 89.062 (88.143)
+2024-10-20 23:57:51,090 DEBUG  * Prec@1 88.020
+2024-10-20 23:57:52,685 DEBUG Train in V2_epoch style
+2024-10-20 23:57:52,707 DEBUG log--[179/240][0/391][client-0] train loss: 0.3487 cross-entropy loss: 0.1431
+2024-10-20 23:57:59,779 DEBUG log--[179/240][390/391][client-0] train loss: 0.3461 cross-entropy loss: 0.0765
+2024-10-20 23:58:00,147 DEBUG Epoch 0	Test (client-0):	Loss 0.3810 (0.3810)	Prec@1 92.188 (92.188)
+2024-10-20 23:58:00,262 DEBUG Epoch 50	Test (client-0):	Loss 0.3692 (0.4286)	Prec@1 89.062 (88.986)
+2024-10-20 23:58:00,418 DEBUG  * Prec@1 89.100
+2024-10-20 23:58:01,927 DEBUG Train in V2_epoch style
+2024-10-20 23:58:01,952 DEBUG log--[180/240][0/391][client-0] train loss: 0.3376 cross-entropy loss: 0.0957
+2024-10-20 23:58:09,089 DEBUG log--[180/240][390/391][client-0] train loss: 0.3486 cross-entropy loss: 0.0641
+2024-10-20 23:58:09,444 DEBUG Epoch 0	Test (client-0):	Loss 0.3546 (0.3546)	Prec@1 92.969 (92.969)
+2024-10-20 23:58:09,557 DEBUG Epoch 50	Test (client-0):	Loss 0.3498 (0.4153)	Prec@1 92.969 (89.583)
+2024-10-20 23:58:09,685 DEBUG  * Prec@1 89.740
+2024-10-20 23:58:11,270 DEBUG Train in V2_epoch style
+2024-10-20 23:58:11,292 DEBUG log--[181/240][0/391][client-0] train loss: 0.2974 cross-entropy loss: 0.0434
+2024-10-20 23:58:18,343 DEBUG log--[181/240][390/391][client-0] train loss: 0.2972 cross-entropy loss: 0.0583
+2024-10-20 23:58:18,711 DEBUG Epoch 0	Test (client-0):	Loss 0.3320 (0.3320)	Prec@1 94.531 (94.531)
+2024-10-20 23:58:18,821 DEBUG Epoch 50	Test (client-0):	Loss 0.3219 (0.4120)	Prec@1 91.406 (89.737)
+2024-10-20 23:58:18,949 DEBUG  * Prec@1 89.790
+2024-10-20 23:58:20,478 DEBUG the mean of mutal infor is:(-6.172), the est mean of mutal infor is:(-5.498)
+2024-10-20 23:58:20,584 DEBUG Train in V2_epoch style
+2024-10-20 23:58:20,607 DEBUG log--[182/240][0/391][client-0] train loss: 0.2668 cross-entropy loss: 0.0605
+2024-10-20 23:58:27,415 DEBUG log--[182/240][390/391][client-0] train loss: 0.2755 cross-entropy loss: 0.0567
+2024-10-20 23:58:27,771 DEBUG Epoch 0	Test (client-0):	Loss 0.2989 (0.2989)	Prec@1 93.750 (93.750)
+2024-10-20 23:58:27,879 DEBUG Epoch 50	Test (client-0):	Loss 0.4016 (0.4088)	Prec@1 90.625 (89.675)
+2024-10-20 23:58:28,008 DEBUG  * Prec@1 89.910
+2024-10-20 23:58:29,579 DEBUG Train in V2_epoch style
+2024-10-20 23:58:29,601 DEBUG log--[183/240][0/391][client-0] train loss: 0.2409 cross-entropy loss: 0.1320
+2024-10-20 23:58:36,348 DEBUG log--[183/240][390/391][client-0] train loss: 0.2567 cross-entropy loss: 0.0573
+2024-10-20 23:58:36,698 DEBUG Epoch 0	Test (client-0):	Loss 0.3479 (0.3479)	Prec@1 92.969 (92.969)
+2024-10-20 23:58:36,810 DEBUG Epoch 50	Test (client-0):	Loss 0.3948 (0.4306)	Prec@1 90.625 (89.706)
+2024-10-20 23:58:36,939 DEBUG  * Prec@1 89.830
+2024-10-20 23:58:38,547 DEBUG Train in V2_epoch style
+2024-10-20 23:58:38,569 DEBUG log--[184/240][0/391][client-0] train loss: 0.2375 cross-entropy loss: 0.0464
+2024-10-20 23:58:45,414 DEBUG log--[184/240][390/391][client-0] train loss: 0.2458 cross-entropy loss: 0.0569
+2024-10-20 23:58:45,780 DEBUG Epoch 0	Test (client-0):	Loss 0.3892 (0.3892)	Prec@1 91.406 (91.406)
+2024-10-20 23:58:45,891 DEBUG Epoch 50	Test (client-0):	Loss 0.5069 (0.4281)	Prec@1 88.281 (89.476)
+2024-10-20 23:58:46,064 DEBUG  * Prec@1 89.470
+2024-10-20 23:58:47,639 DEBUG Train in V2_epoch style
+2024-10-20 23:58:47,664 DEBUG log--[185/240][0/391][client-0] train loss: 0.2493 cross-entropy loss: 0.0883
+2024-10-20 23:58:54,402 DEBUG log--[185/240][390/391][client-0] train loss: 0.2397 cross-entropy loss: 0.0571
+2024-10-20 23:58:54,774 DEBUG Epoch 0	Test (client-0):	Loss 0.3520 (0.3520)	Prec@1 93.750 (93.750)
+2024-10-20 23:58:54,882 DEBUG Epoch 50	Test (client-0):	Loss 0.4557 (0.4238)	Prec@1 89.844 (89.522)
+2024-10-20 23:58:55,013 DEBUG  * Prec@1 89.830
+2024-10-20 23:58:56,561 DEBUG Train in V2_epoch style
+2024-10-20 23:58:56,584 DEBUG log--[186/240][0/391][client-0] train loss: 0.2468 cross-entropy loss: 0.0322
+2024-10-20 23:59:03,595 DEBUG log--[186/240][390/391][client-0] train loss: 0.2323 cross-entropy loss: 0.0581
+2024-10-20 23:59:03,964 DEBUG Epoch 0	Test (client-0):	Loss 0.2490 (0.2490)	Prec@1 95.312 (95.312)
+2024-10-20 23:59:04,074 DEBUG Epoch 50	Test (client-0):	Loss 0.4244 (0.4295)	Prec@1 88.281 (89.246)
+2024-10-20 23:59:04,203 DEBUG  * Prec@1 89.440
+2024-10-20 23:59:05,699 DEBUG Train in V2_epoch style
+2024-10-20 23:59:05,721 DEBUG log--[187/240][0/391][client-0] train loss: 0.2225 cross-entropy loss: 0.0526
+2024-10-20 23:59:12,675 DEBUG log--[187/240][390/391][client-0] train loss: 0.2268 cross-entropy loss: 0.0578
+2024-10-20 23:59:13,048 DEBUG Epoch 0	Test (client-0):	Loss 0.3532 (0.3532)	Prec@1 91.406 (91.406)
+2024-10-20 23:59:13,157 DEBUG Epoch 50	Test (client-0):	Loss 0.4920 (0.4238)	Prec@1 88.281 (89.645)
+2024-10-20 23:59:13,288 DEBUG  * Prec@1 89.580
+2024-10-20 23:59:14,804 DEBUG Train in V2_epoch style
+2024-10-20 23:59:14,827 DEBUG log--[188/240][0/391][client-0] train loss: 0.2280 cross-entropy loss: 0.0451
+2024-10-20 23:59:21,989 DEBUG log--[188/240][390/391][client-0] train loss: 0.2274 cross-entropy loss: 0.0590
+2024-10-20 23:59:22,352 DEBUG Epoch 0	Test (client-0):	Loss 0.3021 (0.3021)	Prec@1 93.750 (93.750)
+2024-10-20 23:59:22,466 DEBUG Epoch 50	Test (client-0):	Loss 0.4013 (0.4311)	Prec@1 90.625 (89.844)
+2024-10-20 23:59:22,595 DEBUG  * Prec@1 89.730
+2024-10-20 23:59:24,146 DEBUG Train in V2_epoch style
+2024-10-20 23:59:24,168 DEBUG log--[189/240][0/391][client-0] train loss: 0.2187 cross-entropy loss: 0.0611
+2024-10-20 23:59:31,036 DEBUG log--[189/240][390/391][client-0] train loss: 0.2288 cross-entropy loss: 0.0550
+2024-10-20 23:59:31,401 DEBUG Epoch 0	Test (client-0):	Loss 0.3328 (0.3328)	Prec@1 92.188 (92.188)
+2024-10-20 23:59:31,509 DEBUG Epoch 50	Test (client-0):	Loss 0.5025 (0.4289)	Prec@1 86.719 (89.430)
+2024-10-20 23:59:31,640 DEBUG  * Prec@1 89.480
+2024-10-20 23:59:33,164 DEBUG Train in V2_epoch style
+2024-10-20 23:59:33,185 DEBUG log--[190/240][0/391][client-0] train loss: 0.2305 cross-entropy loss: 0.0496
+2024-10-20 23:59:39,866 DEBUG log--[190/240][390/391][client-0] train loss: 0.2222 cross-entropy loss: 0.0553
+2024-10-20 23:59:40,237 DEBUG Epoch 0	Test (client-0):	Loss 0.2797 (0.2797)	Prec@1 94.531 (94.531)
+2024-10-20 23:59:40,346 DEBUG Epoch 50	Test (client-0):	Loss 0.4895 (0.4302)	Prec@1 89.062 (89.568)
+2024-10-20 23:59:40,481 DEBUG  * Prec@1 89.510
+2024-10-20 23:59:42,032 DEBUG Train in V2_epoch style
+2024-10-20 23:59:42,053 DEBUG log--[191/240][0/391][client-0] train loss: 0.2151 cross-entropy loss: 0.0343
+2024-10-20 23:59:48,659 DEBUG log--[191/240][390/391][client-0] train loss: 0.2226 cross-entropy loss: 0.0562
+2024-10-20 23:59:49,023 DEBUG Epoch 0	Test (client-0):	Loss 0.3905 (0.3905)	Prec@1 91.406 (91.406)
+2024-10-20 23:59:49,134 DEBUG Epoch 50	Test (client-0):	Loss 0.5193 (0.4304)	Prec@1 87.500 (89.369)
+2024-10-20 23:59:49,268 DEBUG  * Prec@1 89.440
+2024-10-20 23:59:50,737 DEBUG the mean of mutal infor is:(-6.309), the est mean of mutal infor is:(-5.712)
+2024-10-20 23:59:50,849 DEBUG Train in V2_epoch style
+2024-10-20 23:59:50,871 DEBUG log--[192/240][0/391][client-0] train loss: 0.2249 cross-entropy loss: 0.0711
+2024-10-20 23:59:58,063 DEBUG log--[192/240][390/391][client-0] train loss: 0.2188 cross-entropy loss: 0.0564
+2024-10-20 23:59:58,431 DEBUG Epoch 0	Test (client-0):	Loss 0.3047 (0.3047)	Prec@1 92.969 (92.969)
+2024-10-20 23:59:58,543 DEBUG Epoch 50	Test (client-0):	Loss 0.3866 (0.4343)	Prec@1 89.062 (89.216)
+2024-10-20 23:59:58,674 DEBUG  * Prec@1 89.350
+2024-10-21 00:00:00,179 DEBUG Train in V2_epoch style
+2024-10-21 00:00:00,200 DEBUG log--[193/240][0/391][client-0] train loss: 0.2296 cross-entropy loss: 0.0510
+2024-10-21 00:00:06,961 DEBUG log--[193/240][390/391][client-0] train loss: 0.2239 cross-entropy loss: 0.0561
+2024-10-21 00:00:07,327 DEBUG Epoch 0	Test (client-0):	Loss 0.3559 (0.3559)	Prec@1 92.188 (92.188)
+2024-10-21 00:00:07,436 DEBUG Epoch 50	Test (client-0):	Loss 0.4464 (0.4189)	Prec@1 89.062 (89.583)
+2024-10-21 00:00:07,568 DEBUG  * Prec@1 89.440
+2024-10-21 00:00:09,098 DEBUG Train in V2_epoch style
+2024-10-21 00:00:09,120 DEBUG log--[194/240][0/391][client-0] train loss: 0.2090 cross-entropy loss: 0.0505
+2024-10-21 00:00:16,136 DEBUG log--[194/240][390/391][client-0] train loss: 0.2224 cross-entropy loss: 0.0546
+2024-10-21 00:00:16,506 DEBUG Epoch 0	Test (client-0):	Loss 0.2998 (0.2998)	Prec@1 93.750 (93.750)
+2024-10-21 00:00:16,617 DEBUG Epoch 50	Test (client-0):	Loss 0.4081 (0.4440)	Prec@1 89.062 (89.277)
+2024-10-21 00:00:16,752 DEBUG  * Prec@1 89.500
+2024-10-21 00:00:18,323 DEBUG Train in V2_epoch style
+2024-10-21 00:00:18,345 DEBUG log--[195/240][0/391][client-0] train loss: 0.2140 cross-entropy loss: 0.0326
+2024-10-21 00:00:25,465 DEBUG log--[195/240][390/391][client-0] train loss: 0.2211 cross-entropy loss: 0.0540
+2024-10-21 00:00:25,836 DEBUG Epoch 0	Test (client-0):	Loss 0.3017 (0.3017)	Prec@1 95.312 (95.312)
+2024-10-21 00:00:25,951 DEBUG Epoch 50	Test (client-0):	Loss 0.4625 (0.4346)	Prec@1 85.938 (89.154)
+2024-10-21 00:00:26,083 DEBUG  * Prec@1 89.180
+2024-10-21 00:00:27,584 DEBUG Train in V2_epoch style
+2024-10-21 00:00:28,080 DEBUG log--[196/240][0/391][client-0] train loss: 0.2176 cross-entropy loss: 0.0191
+2024-10-21 00:00:35,140 DEBUG log--[196/240][390/391][client-0] train loss: 0.2147 cross-entropy loss: 0.0508
+2024-10-21 00:00:35,517 DEBUG Epoch 0	Test (client-0):	Loss 0.2840 (0.2840)	Prec@1 92.188 (92.188)
+2024-10-21 00:00:35,625 DEBUG Epoch 50	Test (client-0):	Loss 0.3814 (0.4362)	Prec@1 91.406 (89.568)
+2024-10-21 00:00:35,751 DEBUG  * Prec@1 89.500
+2024-10-21 00:00:37,286 DEBUG Train in V2_epoch style
+2024-10-21 00:00:37,310 DEBUG log--[197/240][0/391][client-0] train loss: 0.2267 cross-entropy loss: 0.0343
+2024-10-21 00:00:44,302 DEBUG log--[197/240][390/391][client-0] train loss: 0.2152 cross-entropy loss: 0.0554
+2024-10-21 00:00:44,669 DEBUG Epoch 0	Test (client-0):	Loss 0.3868 (0.3868)	Prec@1 91.406 (91.406)
+2024-10-21 00:00:44,828 DEBUG Epoch 50	Test (client-0):	Loss 0.4293 (0.4365)	Prec@1 90.625 (89.553)
+2024-10-21 00:00:44,995 DEBUG  * Prec@1 89.460
+2024-10-21 00:00:46,551 DEBUG Train in V2_epoch style
+2024-10-21 00:00:46,574 DEBUG log--[198/240][0/391][client-0] train loss: 0.2065 cross-entropy loss: 0.0193
+2024-10-21 00:00:53,537 DEBUG log--[198/240][390/391][client-0] train loss: 0.2166 cross-entropy loss: 0.0526
+2024-10-21 00:00:53,916 DEBUG Epoch 0	Test (client-0):	Loss 0.3442 (0.3442)	Prec@1 92.969 (92.969)
+2024-10-21 00:00:54,040 DEBUG Epoch 50	Test (client-0):	Loss 0.4725 (0.4352)	Prec@1 88.281 (89.354)
+2024-10-21 00:00:54,165 DEBUG  * Prec@1 89.420
+2024-10-21 00:00:55,733 DEBUG Train in V2_epoch style
+2024-10-21 00:00:55,755 DEBUG log--[199/240][0/391][client-0] train loss: 0.1999 cross-entropy loss: 0.0776
+2024-10-21 00:01:02,930 DEBUG log--[199/240][390/391][client-0] train loss: 0.2142 cross-entropy loss: 0.0511
+2024-10-21 00:01:03,308 DEBUG Epoch 0	Test (client-0):	Loss 0.3437 (0.3437)	Prec@1 93.750 (93.750)
+2024-10-21 00:01:03,418 DEBUG Epoch 50	Test (client-0):	Loss 0.5063 (0.4382)	Prec@1 89.844 (89.660)
+2024-10-21 00:01:03,591 DEBUG  * Prec@1 89.780
+2024-10-21 00:01:05,187 DEBUG Train in V2_epoch style
+2024-10-21 00:01:05,211 DEBUG log--[200/240][0/391][client-0] train loss: 0.2207 cross-entropy loss: 0.0668
+2024-10-21 00:01:12,364 DEBUG log--[200/240][390/391][client-0] train loss: 0.2120 cross-entropy loss: 0.0515
+2024-10-21 00:01:12,737 DEBUG Epoch 0	Test (client-0):	Loss 0.3681 (0.3681)	Prec@1 88.281 (88.281)
+2024-10-21 00:01:12,847 DEBUG Epoch 50	Test (client-0):	Loss 0.5423 (0.4322)	Prec@1 86.719 (89.323)
+2024-10-21 00:01:12,977 DEBUG  * Prec@1 89.370
+2024-10-21 00:01:14,549 DEBUG Train in V2_epoch style
+2024-10-21 00:01:14,571 DEBUG log--[201/240][0/391][client-0] train loss: 0.2119 cross-entropy loss: 0.0428
+2024-10-21 00:01:21,361 DEBUG log--[201/240][390/391][client-0] train loss: 0.2115 cross-entropy loss: 0.0522
+2024-10-21 00:01:21,737 DEBUG Epoch 0	Test (client-0):	Loss 0.3156 (0.3156)	Prec@1 93.750 (93.750)
+2024-10-21 00:01:21,842 DEBUG Epoch 50	Test (client-0):	Loss 0.4415 (0.4360)	Prec@1 90.625 (89.369)
+2024-10-21 00:01:22,014 DEBUG  * Prec@1 89.440
+2024-10-21 00:01:23,596 DEBUG the mean of mutal infor is:(-6.334), the est mean of mutal infor is:(-5.751)
+2024-10-21 00:01:26,234 DEBUG Train in V2_epoch style
+2024-10-21 00:01:26,263 DEBUG log--[202/240][0/391][client-0] train loss: 0.2129 cross-entropy loss: 0.0291
+2024-10-21 00:01:33,164 DEBUG log--[202/240][390/391][client-0] train loss: 0.2081 cross-entropy loss: 0.0523
+2024-10-21 00:01:33,544 DEBUG Epoch 0	Test (client-0):	Loss 0.3984 (0.3984)	Prec@1 92.188 (92.188)
+2024-10-21 00:01:33,706 DEBUG Epoch 50	Test (client-0):	Loss 0.4545 (0.4496)	Prec@1 89.062 (89.124)
+2024-10-21 00:01:33,837 DEBUG  * Prec@1 89.510
+2024-10-21 00:01:35,462 DEBUG Train in V2_epoch style
+2024-10-21 00:01:35,486 DEBUG log--[203/240][0/391][client-0] train loss: 0.2090 cross-entropy loss: 0.0786
+2024-10-21 00:01:42,277 DEBUG log--[203/240][390/391][client-0] train loss: 0.2085 cross-entropy loss: 0.0530
+2024-10-21 00:01:42,645 DEBUG Epoch 0	Test (client-0):	Loss 0.3201 (0.3201)	Prec@1 93.750 (93.750)
+2024-10-21 00:01:42,755 DEBUG Epoch 50	Test (client-0):	Loss 0.3809 (0.4258)	Prec@1 91.406 (89.675)
+2024-10-21 00:01:42,889 DEBUG  * Prec@1 89.790
+2024-10-21 00:01:44,526 DEBUG Train in V2_epoch style
+2024-10-21 00:01:44,553 DEBUG log--[204/240][0/391][client-0] train loss: 0.2098 cross-entropy loss: 0.0801
+2024-10-21 00:01:51,420 DEBUG log--[204/240][390/391][client-0] train loss: 0.2133 cross-entropy loss: 0.0505
+2024-10-21 00:01:51,793 DEBUG Epoch 0	Test (client-0):	Loss 0.2864 (0.2864)	Prec@1 91.406 (91.406)
+2024-10-21 00:01:51,903 DEBUG Epoch 50	Test (client-0):	Loss 0.5097 (0.4554)	Prec@1 88.281 (89.017)
+2024-10-21 00:01:52,033 DEBUG  * Prec@1 89.460
+2024-10-21 00:01:53,579 DEBUG Train in V2_epoch style
+2024-10-21 00:01:53,603 DEBUG log--[205/240][0/391][client-0] train loss: 0.2022 cross-entropy loss: 0.0508
+2024-10-21 00:02:00,958 DEBUG log--[205/240][390/391][client-0] train loss: 0.2089 cross-entropy loss: 0.0511
+2024-10-21 00:02:01,322 DEBUG Epoch 0	Test (client-0):	Loss 0.2848 (0.2848)	Prec@1 92.969 (92.969)
+2024-10-21 00:02:01,431 DEBUG Epoch 50	Test (client-0):	Loss 0.4586 (0.4385)	Prec@1 88.281 (89.599)
+2024-10-21 00:02:01,581 DEBUG  * Prec@1 89.480
+2024-10-21 00:02:03,109 DEBUG Train in V2_epoch style
+2024-10-21 00:02:03,131 DEBUG log--[206/240][0/391][client-0] train loss: 0.2049 cross-entropy loss: 0.0385
+2024-10-21 00:02:09,782 DEBUG log--[206/240][390/391][client-0] train loss: 0.2109 cross-entropy loss: 0.0519
+2024-10-21 00:02:10,167 DEBUG Epoch 0	Test (client-0):	Loss 0.4561 (0.4561)	Prec@1 89.062 (89.062)
+2024-10-21 00:02:10,275 DEBUG Epoch 50	Test (client-0):	Loss 0.4400 (0.4430)	Prec@1 88.281 (88.909)
+2024-10-21 00:02:10,407 DEBUG  * Prec@1 89.200
+2024-10-21 00:02:11,953 DEBUG Train in V2_epoch style
+2024-10-21 00:02:11,975 DEBUG log--[207/240][0/391][client-0] train loss: 0.1934 cross-entropy loss: 0.0622
+2024-10-21 00:02:19,207 DEBUG log--[207/240][390/391][client-0] train loss: 0.2091 cross-entropy loss: 0.0490
+2024-10-21 00:02:19,597 DEBUG Epoch 0	Test (client-0):	Loss 0.3897 (0.3897)	Prec@1 92.188 (92.188)
+2024-10-21 00:02:19,706 DEBUG Epoch 50	Test (client-0):	Loss 0.4679 (0.4476)	Prec@1 88.281 (89.292)
+2024-10-21 00:02:19,844 DEBUG  * Prec@1 89.450
+2024-10-21 00:02:21,359 DEBUG Train in V2_epoch style
+2024-10-21 00:02:21,382 DEBUG log--[208/240][0/391][client-0] train loss: 0.2073 cross-entropy loss: 0.0797
+2024-10-21 00:02:28,166 DEBUG log--[208/240][390/391][client-0] train loss: 0.2042 cross-entropy loss: 0.0501
+2024-10-21 00:02:28,535 DEBUG Epoch 0	Test (client-0):	Loss 0.3733 (0.3733)	Prec@1 89.844 (89.844)
+2024-10-21 00:02:28,644 DEBUG Epoch 50	Test (client-0):	Loss 0.6170 (0.4374)	Prec@1 86.719 (89.844)
+2024-10-21 00:02:28,780 DEBUG  * Prec@1 89.680
+2024-10-21 00:02:30,377 DEBUG Train in V2_epoch style
+2024-10-21 00:02:30,400 DEBUG log--[209/240][0/391][client-0] train loss: 0.2162 cross-entropy loss: 0.0552
+2024-10-21 00:02:37,234 DEBUG log--[209/240][390/391][client-0] train loss: 0.2079 cross-entropy loss: 0.0473
+2024-10-21 00:02:37,611 DEBUG Epoch 0	Test (client-0):	Loss 0.4012 (0.4012)	Prec@1 90.625 (90.625)
+2024-10-21 00:02:37,723 DEBUG Epoch 50	Test (client-0):	Loss 0.4678 (0.4504)	Prec@1 89.062 (89.522)
+2024-10-21 00:02:37,856 DEBUG  * Prec@1 89.770
+2024-10-21 00:02:39,518 DEBUG Train in V2_epoch style
+2024-10-21 00:02:39,542 DEBUG log--[210/240][0/391][client-0] train loss: 0.2140 cross-entropy loss: 0.0417
+2024-10-21 00:02:46,397 DEBUG log--[210/240][390/391][client-0] train loss: 0.2051 cross-entropy loss: 0.0481
+2024-10-21 00:02:46,769 DEBUG Epoch 0	Test (client-0):	Loss 0.3314 (0.3314)	Prec@1 92.969 (92.969)
+2024-10-21 00:02:46,882 DEBUG Epoch 50	Test (client-0):	Loss 0.4942 (0.4432)	Prec@1 85.156 (89.660)
+2024-10-21 00:02:47,053 DEBUG  * Prec@1 89.650
+2024-10-21 00:02:48,631 DEBUG Train in V2_epoch style
+2024-10-21 00:02:48,654 DEBUG log--[211/240][0/391][client-0] train loss: 0.2055 cross-entropy loss: 0.0172
+2024-10-21 00:02:55,370 DEBUG log--[211/240][390/391][client-0] train loss: 0.2055 cross-entropy loss: 0.0468
+2024-10-21 00:02:55,740 DEBUG Epoch 0	Test (client-0):	Loss 0.3621 (0.3621)	Prec@1 92.188 (92.188)
+2024-10-21 00:02:55,853 DEBUG Epoch 50	Test (client-0):	Loss 0.4061 (0.4373)	Prec@1 89.844 (89.767)
+2024-10-21 00:02:55,985 DEBUG  * Prec@1 89.860
+2024-10-21 00:02:57,497 DEBUG the mean of mutal infor is:(-6.342), the est mean of mutal infor is:(-5.762)
+2024-10-21 00:02:57,605 DEBUG Train in V2_epoch style
+2024-10-21 00:02:57,627 DEBUG log--[212/240][0/391][client-0] train loss: 0.2037 cross-entropy loss: 0.0165
+2024-10-21 00:03:04,673 DEBUG log--[212/240][390/391][client-0] train loss: 0.2042 cross-entropy loss: 0.0467
+2024-10-21 00:03:05,055 DEBUG Epoch 0	Test (client-0):	Loss 0.3574 (0.3574)	Prec@1 92.969 (92.969)
+2024-10-21 00:03:05,164 DEBUG Epoch 50	Test (client-0):	Loss 0.4598 (0.4288)	Prec@1 89.062 (89.675)
+2024-10-21 00:03:05,339 DEBUG  * Prec@1 89.720
+2024-10-21 00:03:07,697 DEBUG Train in V2_epoch style
+2024-10-21 00:03:07,720 DEBUG log--[213/240][0/391][client-0] train loss: 0.1981 cross-entropy loss: 0.0670
+2024-10-21 00:03:14,622 DEBUG log--[213/240][390/391][client-0] train loss: 0.1999 cross-entropy loss: 0.0471
+2024-10-21 00:03:15,012 DEBUG Epoch 0	Test (client-0):	Loss 0.3919 (0.3919)	Prec@1 91.406 (91.406)
+2024-10-21 00:03:15,120 DEBUG Epoch 50	Test (client-0):	Loss 0.5034 (0.4342)	Prec@1 88.281 (89.936)
+2024-10-21 00:03:15,254 DEBUG  * Prec@1 89.770
+2024-10-21 00:03:16,796 DEBUG Train in V2_epoch style
+2024-10-21 00:03:16,819 DEBUG log--[214/240][0/391][client-0] train loss: 0.1993 cross-entropy loss: 0.1004
+2024-10-21 00:03:23,871 DEBUG log--[214/240][390/391][client-0] train loss: 0.2037 cross-entropy loss: 0.0452
+2024-10-21 00:03:24,252 DEBUG Epoch 0	Test (client-0):	Loss 0.3816 (0.3816)	Prec@1 92.188 (92.188)
+2024-10-21 00:03:24,360 DEBUG Epoch 50	Test (client-0):	Loss 0.5134 (0.4433)	Prec@1 86.719 (89.522)
+2024-10-21 00:03:24,493 DEBUG  * Prec@1 89.670
+2024-10-21 00:03:26,031 DEBUG Train in V2_epoch style
+2024-10-21 00:03:26,054 DEBUG log--[215/240][0/391][client-0] train loss: 0.2033 cross-entropy loss: 0.0674
+2024-10-21 00:03:32,962 DEBUG log--[215/240][390/391][client-0] train loss: 0.2024 cross-entropy loss: 0.0483
+2024-10-21 00:03:33,346 DEBUG Epoch 0	Test (client-0):	Loss 0.3752 (0.3752)	Prec@1 91.406 (91.406)
+2024-10-21 00:03:33,457 DEBUG Epoch 50	Test (client-0):	Loss 0.4516 (0.4400)	Prec@1 89.844 (89.231)
+2024-10-21 00:03:33,587 DEBUG  * Prec@1 89.500
+2024-10-21 00:03:35,071 DEBUG Train in V2_epoch style
+2024-10-21 00:03:35,093 DEBUG log--[216/240][0/391][client-0] train loss: 0.1809 cross-entropy loss: 0.0380
+2024-10-21 00:03:41,965 DEBUG log--[216/240][390/391][client-0] train loss: 0.2028 cross-entropy loss: 0.0444
+2024-10-21 00:03:42,351 DEBUG Epoch 0	Test (client-0):	Loss 0.3381 (0.3381)	Prec@1 92.969 (92.969)
+2024-10-21 00:03:42,462 DEBUG Epoch 50	Test (client-0):	Loss 0.4807 (0.4271)	Prec@1 88.281 (89.537)
+2024-10-21 00:03:42,599 DEBUG  * Prec@1 89.650
+2024-10-21 00:03:44,143 DEBUG Train in V2_epoch style
+2024-10-21 00:03:44,166 DEBUG log--[217/240][0/391][client-0] train loss: 0.2087 cross-entropy loss: 0.0646
+2024-10-21 00:03:51,027 DEBUG log--[217/240][390/391][client-0] train loss: 0.2005 cross-entropy loss: 0.0452
+2024-10-21 00:03:51,411 DEBUG Epoch 0	Test (client-0):	Loss 0.3356 (0.3356)	Prec@1 92.188 (92.188)
+2024-10-21 00:03:51,523 DEBUG Epoch 50	Test (client-0):	Loss 0.4090 (0.4310)	Prec@1 88.281 (89.400)
+2024-10-21 00:03:51,658 DEBUG  * Prec@1 89.610
+2024-10-21 00:03:53,184 DEBUG Train in V2_epoch style
+2024-10-21 00:03:53,207 DEBUG log--[218/240][0/391][client-0] train loss: 0.2142 cross-entropy loss: 0.0407
+2024-10-21 00:04:00,255 DEBUG log--[218/240][390/391][client-0] train loss: 0.2025 cross-entropy loss: 0.0478
+2024-10-21 00:04:00,642 DEBUG Epoch 0	Test (client-0):	Loss 0.3526 (0.3526)	Prec@1 92.188 (92.188)
+2024-10-21 00:04:00,750 DEBUG Epoch 50	Test (client-0):	Loss 0.4171 (0.4288)	Prec@1 89.844 (89.890)
+2024-10-21 00:04:00,881 DEBUG  * Prec@1 89.870
+2024-10-21 00:04:02,506 DEBUG Train in V2_epoch style
+2024-10-21 00:04:02,527 DEBUG log--[219/240][0/391][client-0] train loss: 0.2078 cross-entropy loss: 0.0835
+2024-10-21 00:04:09,679 DEBUG log--[219/240][390/391][client-0] train loss: 0.2036 cross-entropy loss: 0.0451
+2024-10-21 00:04:10,068 DEBUG Epoch 0	Test (client-0):	Loss 0.2993 (0.2993)	Prec@1 92.188 (92.188)
+2024-10-21 00:04:10,181 DEBUG Epoch 50	Test (client-0):	Loss 0.4571 (0.4441)	Prec@1 90.625 (89.384)
+2024-10-21 00:04:10,325 DEBUG  * Prec@1 89.550
+2024-10-21 00:04:11,812 DEBUG Train in V2_epoch style
+2024-10-21 00:04:11,835 DEBUG log--[220/240][0/391][client-0] train loss: 0.1884 cross-entropy loss: 0.0215
+2024-10-21 00:04:18,862 DEBUG log--[220/240][390/391][client-0] train loss: 0.2019 cross-entropy loss: 0.0457
+2024-10-21 00:04:19,250 DEBUG Epoch 0	Test (client-0):	Loss 0.3835 (0.3835)	Prec@1 92.188 (92.188)
+2024-10-21 00:04:19,356 DEBUG Epoch 50	Test (client-0):	Loss 0.4022 (0.4336)	Prec@1 89.062 (89.813)
+2024-10-21 00:04:19,488 DEBUG  * Prec@1 89.880
+2024-10-21 00:04:21,079 DEBUG Train in V2_epoch style
+2024-10-21 00:04:21,102 DEBUG log--[221/240][0/391][client-0] train loss: 0.2034 cross-entropy loss: 0.0285
+2024-10-21 00:04:28,010 DEBUG log--[221/240][390/391][client-0] train loss: 0.2013 cross-entropy loss: 0.0428
+2024-10-21 00:04:28,403 DEBUG Epoch 0	Test (client-0):	Loss 0.3952 (0.3952)	Prec@1 90.625 (90.625)
+2024-10-21 00:04:28,512 DEBUG Epoch 50	Test (client-0):	Loss 0.4652 (0.4426)	Prec@1 89.062 (89.369)
+2024-10-21 00:04:28,647 DEBUG  * Prec@1 89.470
+2024-10-21 00:04:30,126 DEBUG the mean of mutal infor is:(-6.356), the est mean of mutal infor is:(-5.784)
+2024-10-21 00:04:30,233 DEBUG Train in V2_epoch style
+2024-10-21 00:04:30,256 DEBUG log--[222/240][0/391][client-0] train loss: 0.1970 cross-entropy loss: 0.0225
+2024-10-21 00:04:37,185 DEBUG log--[222/240][390/391][client-0] train loss: 0.2001 cross-entropy loss: 0.0424
+2024-10-21 00:04:37,582 DEBUG Epoch 0	Test (client-0):	Loss 0.3110 (0.3110)	Prec@1 92.969 (92.969)
+2024-10-21 00:04:37,690 DEBUG Epoch 50	Test (client-0):	Loss 0.5013 (0.4415)	Prec@1 89.844 (89.675)
+2024-10-21 00:04:37,830 DEBUG  * Prec@1 89.800
+2024-10-21 00:04:39,385 DEBUG Train in V2_epoch style
+2024-10-21 00:04:39,408 DEBUG log--[223/240][0/391][client-0] train loss: 0.2124 cross-entropy loss: 0.0391
+2024-10-21 00:04:46,209 DEBUG log--[223/240][390/391][client-0] train loss: 0.2001 cross-entropy loss: 0.0433
+2024-10-21 00:04:46,600 DEBUG Epoch 0	Test (client-0):	Loss 0.3118 (0.3118)	Prec@1 91.406 (91.406)
+2024-10-21 00:04:46,710 DEBUG Epoch 50	Test (client-0):	Loss 0.4894 (0.4455)	Prec@1 88.281 (89.782)
+2024-10-21 00:04:46,842 DEBUG  * Prec@1 89.760
+2024-10-21 00:04:48,420 DEBUG Train in V2_epoch style
+2024-10-21 00:04:48,444 DEBUG log--[224/240][0/391][client-0] train loss: 0.2037 cross-entropy loss: 0.0616
+2024-10-21 00:04:55,358 DEBUG log--[224/240][390/391][client-0] train loss: 0.1977 cross-entropy loss: 0.0439
+2024-10-21 00:04:55,748 DEBUG Epoch 0	Test (client-0):	Loss 0.3046 (0.3046)	Prec@1 91.406 (91.406)
+2024-10-21 00:04:55,859 DEBUG Epoch 50	Test (client-0):	Loss 0.3981 (0.4195)	Prec@1 88.281 (89.997)
+2024-10-21 00:04:55,997 DEBUG  * Prec@1 89.990
+2024-10-21 00:04:57,640 DEBUG Train in V2_epoch style
+2024-10-21 00:04:57,663 DEBUG log--[225/240][0/391][client-0] train loss: 0.2131 cross-entropy loss: 0.0297
+2024-10-21 00:05:04,445 DEBUG log--[225/240][390/391][client-0] train loss: 0.1980 cross-entropy loss: 0.0450
+2024-10-21 00:05:04,845 DEBUG Epoch 0	Test (client-0):	Loss 0.3346 (0.3346)	Prec@1 92.188 (92.188)
+2024-10-21 00:05:04,951 DEBUG Epoch 50	Test (client-0):	Loss 0.4743 (0.4544)	Prec@1 87.500 (89.430)
+2024-10-21 00:05:05,085 DEBUG  * Prec@1 89.650
+2024-10-21 00:05:06,603 DEBUG Train in V2_epoch style
+2024-10-21 00:05:06,627 DEBUG log--[226/240][0/391][client-0] train loss: 0.2056 cross-entropy loss: 0.0381
+2024-10-21 00:05:13,575 DEBUG log--[226/240][390/391][client-0] train loss: 0.1979 cross-entropy loss: 0.0447
+2024-10-21 00:05:13,970 DEBUG Epoch 0	Test (client-0):	Loss 0.3501 (0.3501)	Prec@1 92.188 (92.188)
+2024-10-21 00:05:14,079 DEBUG Epoch 50	Test (client-0):	Loss 0.3762 (0.4440)	Prec@1 89.062 (89.828)
+2024-10-21 00:05:14,212 DEBUG  * Prec@1 89.630
+2024-10-21 00:05:15,727 DEBUG Train in V2_epoch style
+2024-10-21 00:05:15,749 DEBUG log--[227/240][0/391][client-0] train loss: 0.2043 cross-entropy loss: 0.0481
+2024-10-21 00:05:22,705 DEBUG log--[227/240][390/391][client-0] train loss: 0.1986 cross-entropy loss: 0.0425
+2024-10-21 00:05:23,083 DEBUG Epoch 0	Test (client-0):	Loss 0.3982 (0.3982)	Prec@1 90.625 (90.625)
+2024-10-21 00:05:23,190 DEBUG Epoch 50	Test (client-0):	Loss 0.5217 (0.4178)	Prec@1 90.625 (89.844)
+2024-10-21 00:05:23,325 DEBUG  * Prec@1 89.970
+2024-10-21 00:05:24,911 DEBUG Train in V2_epoch style
+2024-10-21 00:05:24,934 DEBUG log--[228/240][0/391][client-0] train loss: 0.1961 cross-entropy loss: 0.0238
+2024-10-21 00:05:31,878 DEBUG log--[228/240][390/391][client-0] train loss: 0.1980 cross-entropy loss: 0.0453
+2024-10-21 00:05:32,273 DEBUG Epoch 0	Test (client-0):	Loss 0.3466 (0.3466)	Prec@1 93.750 (93.750)
+2024-10-21 00:05:32,386 DEBUG Epoch 50	Test (client-0):	Loss 0.5055 (0.4473)	Prec@1 88.281 (89.369)
+2024-10-21 00:05:32,566 DEBUG  * Prec@1 89.590
+2024-10-21 00:05:34,084 DEBUG Train in V2_epoch style
+2024-10-21 00:05:34,107 DEBUG log--[229/240][0/391][client-0] train loss: 0.1873 cross-entropy loss: 0.0562
+2024-10-21 00:05:41,012 DEBUG log--[229/240][390/391][client-0] train loss: 0.1963 cross-entropy loss: 0.0462
+2024-10-21 00:05:41,408 DEBUG Epoch 0	Test (client-0):	Loss 0.4357 (0.4357)	Prec@1 92.969 (92.969)
+2024-10-21 00:05:41,524 DEBUG Epoch 50	Test (client-0):	Loss 0.4152 (0.4398)	Prec@1 87.500 (89.706)
+2024-10-21 00:05:41,659 DEBUG  * Prec@1 89.750
+2024-10-21 00:05:43,189 DEBUG Train in V2_epoch style
+2024-10-21 00:05:43,210 DEBUG log--[230/240][0/391][client-0] train loss: 0.1942 cross-entropy loss: 0.0121
+2024-10-21 00:05:49,923 DEBUG log--[230/240][390/391][client-0] train loss: 0.1980 cross-entropy loss: 0.0454
+2024-10-21 00:05:50,320 DEBUG Epoch 0	Test (client-0):	Loss 0.3668 (0.3668)	Prec@1 92.969 (92.969)
+2024-10-21 00:05:50,429 DEBUG Epoch 50	Test (client-0):	Loss 0.4727 (0.4435)	Prec@1 89.062 (89.583)
+2024-10-21 00:05:50,597 DEBUG  * Prec@1 89.890
+2024-10-21 00:05:52,143 DEBUG Train in V2_epoch style
+2024-10-21 00:05:52,166 DEBUG log--[231/240][0/391][client-0] train loss: 0.1932 cross-entropy loss: 0.0286
+2024-10-21 00:05:59,204 DEBUG log--[231/240][390/391][client-0] train loss: 0.1975 cross-entropy loss: 0.0444
+2024-10-21 00:05:59,599 DEBUG Epoch 0	Test (client-0):	Loss 0.4078 (0.4078)	Prec@1 90.625 (90.625)
+2024-10-21 00:05:59,708 DEBUG Epoch 50	Test (client-0):	Loss 0.4814 (0.4620)	Prec@1 87.500 (89.200)
+2024-10-21 00:05:59,843 DEBUG  * Prec@1 89.210
+2024-10-21 00:06:01,343 DEBUG the mean of mutal infor is:(-6.359), the est mean of mutal infor is:(-5.789)
+2024-10-21 00:06:01,449 DEBUG Train in V2_epoch style
+2024-10-21 00:06:01,469 DEBUG log--[232/240][0/391][client-0] train loss: 0.1891 cross-entropy loss: 0.0288
+2024-10-21 00:06:08,541 DEBUG log--[232/240][390/391][client-0] train loss: 0.1982 cross-entropy loss: 0.0441
+2024-10-21 00:06:08,916 DEBUG Epoch 0	Test (client-0):	Loss 0.4253 (0.4253)	Prec@1 92.188 (92.188)
+2024-10-21 00:06:09,027 DEBUG Epoch 50	Test (client-0):	Loss 0.4570 (0.4489)	Prec@1 89.844 (89.614)
+2024-10-21 00:06:09,160 DEBUG  * Prec@1 89.580
+2024-10-21 00:06:10,754 DEBUG Train in V2_epoch style
+2024-10-21 00:06:10,777 DEBUG log--[233/240][0/391][client-0] train loss: 0.1802 cross-entropy loss: 0.0515
+2024-10-21 00:06:17,580 DEBUG log--[233/240][390/391][client-0] train loss: 0.1975 cross-entropy loss: 0.0461
+2024-10-21 00:06:17,978 DEBUG Epoch 0	Test (client-0):	Loss 0.4160 (0.4160)	Prec@1 92.188 (92.188)
+2024-10-21 00:06:18,087 DEBUG Epoch 50	Test (client-0):	Loss 0.5136 (0.4578)	Prec@1 88.281 (89.323)
+2024-10-21 00:06:18,222 DEBUG  * Prec@1 89.690
+2024-10-21 00:06:19,849 DEBUG Train in V2_epoch style
+2024-10-21 00:06:19,872 DEBUG log--[234/240][0/391][client-0] train loss: 0.1866 cross-entropy loss: 0.0079
+2024-10-21 00:06:26,895 DEBUG log--[234/240][390/391][client-0] train loss: 0.1962 cross-entropy loss: 0.0437
+2024-10-21 00:06:27,281 DEBUG Epoch 0	Test (client-0):	Loss 0.3088 (0.3088)	Prec@1 93.750 (93.750)
+2024-10-21 00:06:27,390 DEBUG Epoch 50	Test (client-0):	Loss 0.5311 (0.4430)	Prec@1 85.938 (89.752)
+2024-10-21 00:06:27,535 DEBUG  * Prec@1 89.790
+2024-10-21 00:06:29,127 DEBUG Train in V2_epoch style
+2024-10-21 00:06:29,150 DEBUG log--[235/240][0/391][client-0] train loss: 0.1995 cross-entropy loss: 0.0157
+2024-10-21 00:06:36,169 DEBUG log--[235/240][390/391][client-0] train loss: 0.1956 cross-entropy loss: 0.0422
+2024-10-21 00:06:36,559 DEBUG Epoch 0	Test (client-0):	Loss 0.3804 (0.3804)	Prec@1 91.406 (91.406)
+2024-10-21 00:06:36,674 DEBUG Epoch 50	Test (client-0):	Loss 0.4304 (0.4410)	Prec@1 91.406 (89.614)
+2024-10-21 00:06:36,812 DEBUG  * Prec@1 89.500
+2024-10-21 00:06:38,378 DEBUG Train in V2_epoch style
+2024-10-21 00:06:38,402 DEBUG log--[236/240][0/391][client-0] train loss: 0.1954 cross-entropy loss: 0.0577
+2024-10-21 00:06:45,194 DEBUG log--[236/240][390/391][client-0] train loss: 0.1950 cross-entropy loss: 0.0421
+2024-10-21 00:06:45,598 DEBUG Epoch 0	Test (client-0):	Loss 0.3489 (0.3489)	Prec@1 91.406 (91.406)
+2024-10-21 00:06:45,708 DEBUG Epoch 50	Test (client-0):	Loss 0.4217 (0.4338)	Prec@1 91.406 (89.813)
+2024-10-21 00:06:45,845 DEBUG  * Prec@1 89.710
+2024-10-21 00:06:47,434 DEBUG Train in V2_epoch style
+2024-10-21 00:06:47,457 DEBUG log--[237/240][0/391][client-0] train loss: 0.1987 cross-entropy loss: 0.0643
+2024-10-21 00:06:54,506 DEBUG log--[237/240][390/391][client-0] train loss: 0.1959 cross-entropy loss: 0.0431
+2024-10-21 00:06:54,897 DEBUG Epoch 0	Test (client-0):	Loss 0.3463 (0.3463)	Prec@1 91.406 (91.406)
+2024-10-21 00:06:55,011 DEBUG Epoch 50	Test (client-0):	Loss 0.4213 (0.4360)	Prec@1 88.281 (89.706)
+2024-10-21 00:06:55,151 DEBUG  * Prec@1 89.860
+2024-10-21 00:06:56,719 DEBUG Train in V2_epoch style
+2024-10-21 00:06:56,742 DEBUG log--[238/240][0/391][client-0] train loss: 0.1983 cross-entropy loss: 0.0171
+2024-10-21 00:07:03,966 DEBUG log--[238/240][390/391][client-0] train loss: 0.1972 cross-entropy loss: 0.0441
+2024-10-21 00:07:04,367 DEBUG Epoch 0	Test (client-0):	Loss 0.3396 (0.3396)	Prec@1 91.406 (91.406)
+2024-10-21 00:07:04,476 DEBUG Epoch 50	Test (client-0):	Loss 0.4330 (0.4349)	Prec@1 89.062 (89.675)
+2024-10-21 00:07:04,616 DEBUG  * Prec@1 89.830
+2024-10-21 00:07:06,202 DEBUG Train in V2_epoch style
+2024-10-21 00:07:06,224 DEBUG log--[239/240][0/391][client-0] train loss: 0.2028 cross-entropy loss: 0.0512
+2024-10-21 00:07:13,252 DEBUG log--[239/240][390/391][client-0] train loss: 0.1961 cross-entropy loss: 0.0428
+2024-10-21 00:07:13,654 DEBUG Epoch 0	Test (client-0):	Loss 0.2916 (0.2916)	Prec@1 93.750 (93.750)
+2024-10-21 00:07:13,764 DEBUG Epoch 50	Test (client-0):	Loss 0.4623 (0.4485)	Prec@1 88.281 (89.491)
+2024-10-21 00:07:13,937 DEBUG  * Prec@1 89.500
+2024-10-21 00:07:15,529 DEBUG Train in V2_epoch style
+2024-10-21 00:07:15,552 DEBUG log--[240/240][0/391][client-0] train loss: 0.1831 cross-entropy loss: 0.0413
+2024-10-21 00:07:22,552 DEBUG log--[240/240][390/391][client-0] train loss: 0.1934 cross-entropy loss: 0.0402
+2024-10-21 00:07:22,942 DEBUG Epoch 0	Test (client-0):	Loss 0.3621 (0.3621)	Prec@1 90.625 (90.625)
+2024-10-21 00:07:23,051 DEBUG Epoch 50	Test (client-0):	Loss 0.4642 (0.4417)	Prec@1 92.188 (89.645)
+2024-10-21 00:07:23,189 DEBUG  * Prec@1 89.690
+2024-10-21 00:07:24,820 DEBUG Best Average Validation Accuracy is 89.99
+2024-10-21 00:07:30,091 DEBUG Split Learning Scheme: Overall Cutting_layer 4/13
+2024-10-21 00:07:33,199 DEBUG Model's smashed-data size is torch.Size([1, 8, 8, 8])
+2024-10-21 00:07:33,429 DEBUG Epoch 0	Test (client-0):	Loss 0.3894 (0.3894)	Prec@1 92.969 (92.969)
+2024-10-21 00:07:33,541 DEBUG Epoch 50	Test (client-0):	Loss 0.5412 (0.4317)	Prec@1 86.719 (89.798)
+2024-10-21 00:07:33,652 DEBUG  * Prec@1 89.820
+2024-10-21 00:07:33,652 DEBUG Best Average Validation Accuracy is 89.82
+2024-10-21 00:10:42,728 DEBUG == res_normN8C64 Training-based MIA performance Score with optimizer Adam, lr 0.001, loss type MSE on best epoch saved model ==
+2024-10-21 00:10:42,728 DEBUG Reverse Intermediate activation at layer -1 (-1 is the smashed-data)
+2024-10-21 00:10:42,728 DEBUG The tested model is: best
+2024-10-21 00:10:42,728 DEBUG MIA performance Score training time is (MSE, SSIM, PSNR) averaging 1 times
+0.0080909387499094, 0.7771906119346619, 20.921928924560547
+2024-10-21 00:10:42,728 DEBUG MIA performance Score inference time is (MSE, SSIM, PSNR): 0.00885, 0.76338, 20.53

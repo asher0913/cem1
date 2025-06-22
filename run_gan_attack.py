@@ -5,7 +5,7 @@ import subprocess
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
 # define the fold of your saved models
-dataset='cifar100' #tinyimagenet;facescrub;cifar10;
+dataset='cifar10' #tinyimagenet;facescrub;cifar10;
 subfolder='Aresult_model'
 AT_regularizations=['gan_adv_step1_pruning191'] #gan_adv_step1_pruning190
 log_entropy=1
@@ -18,7 +18,7 @@ else:
 
 
 for AT_regularization in AT_regularizations:
-    target_directory = "./saves/"+dataset+'/'+subfolder+'/'+f"{AT_regularization}_infocons_sgm_lg{log_entropy}_thre{var_threshold}"
+    target_directory = dataset+'/'+subfolder+'/'+f"{AT_regularization}_infocons_sgm_lg{log_entropy}_thre{var_threshold}"
     pattern = r"pretrain_(?P<pretrain>\w+)_lambd_(?P<lambd>[\d\.]+)_noise_(?P<regularization_strength>[\d\.]+)_epoch_(?P<num_epochs>\d+)_bottleneck_(?P<bottleneck_option>\w+)_log_(?P<log_entropy>\w+)_ATstrength_(?P<AT_regularization_strength>[\d\.]+)_lr_(?P<learning_rate>[\d\.]+)_varthres_(?P<var_threshold>[\d\.]+)"
     if dataset=='facescrub' or dataset=='tinyimagenet':
         ssim_threshold=0.6
