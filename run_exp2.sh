@@ -25,7 +25,7 @@ learning_rate=0.05
 local_lr=-1
 num_epochs=240
 regularization_strength_list="0.025"
-lambd_list="0" #
+lambd_list="16" #
 log_entropy=1
 folder_name="saves/cifar10/${AT_regularization}_infocons_sgm_lg${log_entropy}_thre${var_threshold}" ##the folder to save the model
 bottleneck_option_list="noRELU_C8S1" #"noRELU_C8S1"
@@ -39,23 +39,23 @@ for dataset in $dataset_list; do
                                         filename=pretrain_${pretrain}_lambd_${lambd}_noise_${regularization_strength}_epoch_${num_epochs}_bottleneck_${bottleneck_option}_log_${log_entropy}_ATstrength_${AT_regularization_strength}_lr_${learning_rate}_varthres_${var_threshold}
                                       
 ########################### training the model ########################### please comments this part for model inversion attack  only
-                                        if [ "$pretrain" = "True" ]; then
-                                                num_epochs=80
-                                                learning_rate=0.0001
-                                                CUDA_VISIBLE_DEVICES=${GPU_id} python main_MIA.py --arch=${arch}  --cutlayer=$cutlayer --batch_size=${batch_size} \
-                                                --filename=$filename --num_client=$num_client --num_epochs=$num_epochs \
-                                                --dataset=$dataset --scheme=$scheme --regularization=${regularization} --regularization_strength=${regularization_strength} --log_entropy=${log_entropy} --AT_regularization=${AT_regularization} --AT_regularization_strength=${AT_regularization_strength}\
-                                                --random_seed=$random_seed --learning_rate=$learning_rate --lambd=${lambd}  --gan_AE_type ${train_gan_AE_type} --gan_loss_type ${gan_loss_type}\
-                                                --local_lr $local_lr --bottleneck_option ${bottleneck_option} --folder ${folder_name} --ssim_threshold ${ssim_threshold} --var_threshold ${var_threshold} --load_from_checkpoint --load_from_checkpoint_server
-                                        else
-                                                num_epochs=240
-                                                learning_rate=0.05
-                                                CUDA_VISIBLE_DEVICES=${GPU_id} python main_MIA.py --arch=${arch}  --cutlayer=$cutlayer --batch_size=${batch_size} \
-                                                --filename=$filename --num_client=$num_client --num_epochs=$num_epochs \
-                                                --dataset=$dataset --scheme=$scheme --regularization=${regularization} --regularization_strength=${regularization_strength} --log_entropy=${log_entropy} --AT_regularization=${AT_regularization} --AT_regularization_strength=${AT_regularization_strength}\
-                                                --random_seed=$random_seed --learning_rate=$learning_rate --lambd=$lambd  --gan_AE_type ${train_gan_AE_type} --gan_loss_type ${gan_loss_type}\
-                                                --local_lr $local_lr --bottleneck_option ${bottleneck_option} --folder ${folder_name} --ssim_threshold ${ssim_threshold} --var_threshold ${var_threshold}
-                                        fi
+                                        # if [ "$pretrain" = "True" ]; then
+                                        #         num_epochs=80
+                                        #         learning_rate=0.0001
+                                        #         CUDA_VISIBLE_DEVICES=${GPU_id} python main_MIA.py --arch=${arch}  --cutlayer=$cutlayer --batch_size=${batch_size} \
+                                        #         --filename=$filename --num_client=$num_client --num_epochs=$num_epochs \
+                                        #         --dataset=$dataset --scheme=$scheme --regularization=${regularization} --regularization_strength=${regularization_strength} --log_entropy=${log_entropy} --AT_regularization=${AT_regularization} --AT_regularization_strength=${AT_regularization_strength}\
+                                        #         --random_seed=$random_seed --learning_rate=$learning_rate --lambd=${lambd}  --gan_AE_type ${train_gan_AE_type} --gan_loss_type ${gan_loss_type}\
+                                        #         --local_lr $local_lr --bottleneck_option ${bottleneck_option} --folder ${folder_name} --ssim_threshold ${ssim_threshold} --var_threshold ${var_threshold} --load_from_checkpoint --load_from_checkpoint_server
+                                        # else
+                                        #         num_epochs=240
+                                        #         learning_rate=0.05
+                                        #         CUDA_VISIBLE_DEVICES=${GPU_id} python main_MIA.py --arch=${arch}  --cutlayer=$cutlayer --batch_size=${batch_size} \
+                                        #         --filename=$filename --num_client=$num_client --num_epochs=$num_epochs \
+                                        #         --dataset=$dataset --scheme=$scheme --regularization=${regularization} --regularization_strength=${regularization_strength} --log_entropy=${log_entropy} --AT_regularization=${AT_regularization} --AT_regularization_strength=${AT_regularization_strength}\
+                                        #         --random_seed=$random_seed --learning_rate=$learning_rate --lambd=$lambd  --gan_AE_type ${train_gan_AE_type} --gan_loss_type ${gan_loss_type}\
+                                        #         --local_lr $local_lr --bottleneck_option ${bottleneck_option} --folder ${folder_name} --ssim_threshold ${ssim_threshold} --var_threshold ${var_threshold}
+                                        # fi
 ########################### model inversion attack  ###########################
                                         
                                         target_client=0
